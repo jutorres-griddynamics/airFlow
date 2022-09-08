@@ -1,0 +1,23 @@
+[2022-08-26 16:54:49,969] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.run_this manual__2022-08-26T16:54:27.763733+00:00 [queued]>
+[2022-08-26 16:54:49,985] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.run_this manual__2022-08-26T16:54:27.763733+00:00 [queued]>
+[2022-08-26 16:54:49,986] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:54:49,987] {taskinstance.py:1377} INFO - Starting attempt 1 of 11
+[2022-08-26 16:54:49,987] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:54:50,016] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): run_this> on 2022-08-26 16:54:27.763733+00:00
+[2022-08-26 16:54:50,024] {standard_task_runner.py:52} INFO - Started process 20084 to run task
+[2022-08-26 16:54:50,028] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'run_this', 'manual__2022-08-26T16:54:27.763733+00:00', '--job-id', '3281', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmp7fupjqso', '--error-file', '/tmp/tmpf6yr92fe']
+[2022-08-26 16:54:50,030] {standard_task_runner.py:80} INFO - Job 3281: Subtask run_this
+[2022-08-26 16:54:50,122] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.run_this manual__2022-08-26T16:54:27.763733+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-26 16:54:50,234] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=run_this
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-26T16:54:27.763733+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-26T16:54:27.763733+00:00
+[2022-08-26 16:54:50,237] {python.py:173} INFO - Done. Returned value was: Hola Mundo!
+[2022-08-26 16:54:50,272] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=trigger_sensor, task_id=run_this, execution_date=20220826T165427, start_date=20220826T165449, end_date=20220826T165450
+[2022-08-26 16:54:50,323] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-26 16:54:50,368] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

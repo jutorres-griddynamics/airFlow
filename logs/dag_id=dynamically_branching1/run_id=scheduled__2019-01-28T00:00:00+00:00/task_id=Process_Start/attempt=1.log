@@ -1,0 +1,25 @@
+[2022-08-24 18:43:45,187] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dynamically_branching1.Process_Start scheduled__2019-01-28T00:00:00+00:00 [queued]>
+[2022-08-24 18:43:45,204] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dynamically_branching1.Process_Start scheduled__2019-01-28T00:00:00+00:00 [queued]>
+[2022-08-24 18:43:45,205] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-24 18:43:45,206] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-24 18:43:45,207] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-24 18:43:45,245] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): Process_Start> on 2019-01-28 00:00:00+00:00
+[2022-08-24 18:43:45,259] {standard_task_runner.py:52} INFO - Started process 4088 to run task
+[2022-08-24 18:43:45,273] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dynamically_branching1', 'Process_Start', 'scheduled__2019-01-28T00:00:00+00:00', '--job-id', '959', '--raw', '--subdir', 'DAGS_FOLDER/jobs_dag.py', '--cfg-path', '/tmp/tmp34e_1tz3', '--error-file', '/tmp/tmpt4cm_s1d']
+[2022-08-24 18:43:45,279] {standard_task_runner.py:80} INFO - Job 959: Subtask Process_Start
+[2022-08-24 18:43:45,431] {task_command.py:371} INFO - Running <TaskInstance: dynamically_branching1.Process_Start scheduled__2019-01-28T00:00:00+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-24 18:43:45,647] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dynamically_branching1
+AIRFLOW_CTX_TASK_ID=Process_Start
+AIRFLOW_CTX_EXECUTION_DATE=2019-01-28T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-01-28T00:00:00+00:00
+[2022-08-24 18:43:45,657] {jobs_dag.py:30} INFO - Process Start!
+[2022-08-24 18:43:45,660] {logging_mixin.py:115} INFO - This is DAG: 1
+[2022-08-24 18:43:45,662] {python.py:173} INFO - Done. Returned value was: None
+[2022-08-24 18:43:45,718] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dynamically_branching1, task_id=Process_Start, execution_date=20190128T000000, start_date=20220824T184345, end_date=20220824T184345
+[2022-08-24 18:43:45,823] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-24 18:43:45,937] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

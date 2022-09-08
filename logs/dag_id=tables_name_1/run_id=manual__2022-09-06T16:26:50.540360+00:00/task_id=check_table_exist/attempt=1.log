@@ -1,0 +1,174 @@
+[2022-09-06 16:26:53,525] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: tables_name_1.check_table_exist manual__2022-09-06T16:26:50.540360+00:00 [queued]>
+[2022-09-06 16:26:53,539] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: tables_name_1.check_table_exist manual__2022-09-06T16:26:50.540360+00:00 [queued]>
+[2022-09-06 16:26:53,540] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-06 16:26:53,541] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-09-06 16:26:53,541] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-06 16:26:53,561] {taskinstance.py:1397} INFO - Executing <Task(BranchPythonOperator): check_table_exist> on 2022-09-06 16:26:50.540360+00:00
+[2022-09-06 16:26:53,570] {standard_task_runner.py:52} INFO - Started process 6789 to run task
+[2022-09-06 16:26:53,574] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'tables_name_1', 'check_table_exist', 'manual__2022-09-06T16:26:50.540360+00:00', '--job-id', '3850', '--raw', '--subdir', 'DAGS_FOLDER/jobs_dag.py', '--cfg-path', '/tmp/tmptfzdxfqg', '--error-file', '/tmp/tmpiei6t2_s']
+[2022-09-06 16:26:53,575] {standard_task_runner.py:80} INFO - Job 3850: Subtask check_table_exist
+[2022-09-06 16:26:53,656] {task_command.py:371} INFO - Running <TaskInstance: tables_name_1.check_table_exist manual__2022-09-06T16:26:50.540360+00:00 [running]> on host eba23da77ca5
+[2022-09-06 16:26:53,745] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tables_name_1
+AIRFLOW_CTX_TASK_ID=check_table_exist
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-06T16:26:50.540360+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-06T16:26:50.540360+00:00
+[2022-09-06 16:26:53,760] {base.py:68} INFO - Using connection ID 'postgres_default' for task execution.
+[2022-09-06 16:26:53,771] {logging_mixin.py:115} WARNING - --- Logging error ---
+[2022-09-06 16:26:53,773] {logging_mixin.py:115} WARNING - Traceback (most recent call last):
+[2022-09-06 16:26:53,774] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+[2022-09-06 16:26:53,774] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+[2022-09-06 16:26:53,775] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+[2022-09-06 16:26:53,776] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+[2022-09-06 16:26:53,776] {logging_mixin.py:115} WARNING - TypeError: not all arguments converted during string formatting
+[2022-09-06 16:26:53,777] {logging_mixin.py:115} WARNING - Call stack:
+[2022-09-06 16:26:53,803] {logging_mixin.py:115} WARNING -   File "/home/***/.local/bin/***", line 8, in <module>
+    sys.exit(main())
+[2022-09-06 16:26:53,803] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/__main__.py", line 38, in main
+    args.func(args)
+[2022-09-06 16:26:53,804] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/cli_parser.py", line 51, in command
+    return func(*args, **kwargs)
+[2022-09-06 16:26:53,805] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/utils/cli.py", line 99, in wrapper
+    return f(*args, **kwargs)
+[2022-09-06 16:26:53,806] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/celery_command.py", line 194, in worker
+    _run_worker(options=options, skip_serve_logs=skip_serve_logs)
+[2022-09-06 16:26:53,806] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/celery_command.py", line 94, in _run_worker
+    celery_app.worker_main(options)
+[2022-09-06 16:26:53,808] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/app/base.py", line 391, in worker_main
+    self.start(argv=argv)
+[2022-09-06 16:26:53,808] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/app/base.py", line 371, in start
+    celery.main(args=argv, standalone_mode=False)
+[2022-09-06 16:26:53,809] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+[2022-09-06 16:26:53,809] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[2022-09-06 16:26:53,810] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+[2022-09-06 16:26:53,810] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+[2022-09-06 16:26:53,811] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+[2022-09-06 16:26:53,812] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/bin/base.py", line 134, in caller
+    return f(ctx, *args, **kwargs)
+[2022-09-06 16:26:53,812] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/bin/worker.py", line 351, in worker
+    worker.start()
+[2022-09-06 16:26:53,813] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+[2022-09-06 16:26:53,813] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+[2022-09-06 16:26:53,814] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+[2022-09-06 16:26:53,814] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/concurrency/base.py", line 129, in start
+    self.on_start()
+[2022-09-06 16:26:53,815] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/concurrency/prefork.py", line 115, in on_start
+    **self.options)
+[2022-09-06 16:26:53,815] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/concurrency/asynpool.py", line 463, in __init__
+    super().__init__(processes, *args, **kwargs)
+[2022-09-06 16:26:53,816] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/pool.py", line 1046, in __init__
+    self._create_worker_process(i)
+[2022-09-06 16:26:53,817] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/concurrency/asynpool.py", line 480, in _create_worker_process
+    return super()._create_worker_process(i)
+[2022-09-06 16:26:53,817] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/pool.py", line 1158, in _create_worker_process
+    w.start()
+[2022-09-06 16:26:53,818] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/process.py", line 124, in start
+    self._popen = self._Popen(self)
+[2022-09-06 16:26:53,818] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/context.py", line 333, in _Popen
+    return Popen(process_obj)
+[2022-09-06 16:26:53,819] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/popen_fork.py", line 24, in __init__
+    self._launch(process_obj)
+[2022-09-06 16:26:53,819] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/popen_fork.py", line 79, in _launch
+    code = process_obj._bootstrap()
+[2022-09-06 16:26:53,820] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/process.py", line 327, in _bootstrap
+    self.run()
+[2022-09-06 16:26:53,821] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+[2022-09-06 16:26:53,821] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/pool.py", line 292, in __call__
+    sys.exit(self.workloop(pid=pid))
+[2022-09-06 16:26:53,822] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+[2022-09-06 16:26:53,823] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/app/trace.py", line 650, in fast_trace_task
+    uuid, args, kwargs, request,
+[2022-09-06 16:26:53,823] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+[2022-09-06 16:26:53,824] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+[2022-09-06 16:26:53,825] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/executors/celery_executor.py", line 93, in execute_command
+    _execute_in_fork(command_to_exec, celery_task_id)
+[2022-09-06 16:26:53,826] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/executors/celery_executor.py", line 128, in _execute_in_fork
+    args.func(args)
+[2022-09-06 16:26:53,826] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/cli_parser.py", line 51, in command
+    return func(*args, **kwargs)
+[2022-09-06 16:26:53,827] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/utils/cli.py", line 99, in wrapper
+    return f(*args, **kwargs)
+[2022-09-06 16:26:53,827] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/task_command.py", line 377, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+[2022-09-06 16:26:53,828] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/task_command.py", line 183, in _run_task_by_selected_method
+    _run_task_by_local_task_job(args, ti)
+[2022-09-06 16:26:53,828] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/task_command.py", line 241, in _run_task_by_local_task_job
+    run_job.run()
+[2022-09-06 16:26:53,829] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/jobs/base_job.py", line 244, in run
+    self._execute()
+[2022-09-06 16:26:53,830] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/jobs/local_task_job.py", line 105, in _execute
+    self.task_runner.start()
+[2022-09-06 16:26:53,830] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/task/task_runner/standard_task_runner.py", line 41, in start
+    self.process = self._start_by_fork()
+[2022-09-06 16:26:53,831] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/task/task_runner/standard_task_runner.py", line 88, in _start_by_fork
+    args.func(args, dag=self.dag)
+[2022-09-06 16:26:53,831] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/cli_parser.py", line 51, in command
+    return func(*args, **kwargs)
+[2022-09-06 16:26:53,832] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/utils/cli.py", line 99, in wrapper
+    return f(*args, **kwargs)
+[2022-09-06 16:26:53,833] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/task_command.py", line 377, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+[2022-09-06 16:26:53,833] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/task_command.py", line 185, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+[2022-09-06 16:26:53,834] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/task_command.py", line 262, in _run_raw_task
+    error_file=args.error_file,
+[2022-09-06 16:26:53,834] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+[2022-09-06 16:26:53,835] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/models/taskinstance.py", line 1471, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode)
+[2022-09-06 16:26:53,836] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/models/taskinstance.py", line 1618, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+[2022-09-06 16:26:53,836] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/models/taskinstance.py", line 1679, in _execute_task
+    result = execute_callable(context=context)
+[2022-09-06 16:26:53,837] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/operators/python.py", line 207, in execute
+    branch = super().execute(context)
+[2022-09-06 16:26:53,837] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+[2022-09-06 16:26:53,838] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+[2022-09-06 16:26:53,838] {logging_mixin.py:115} WARNING -   File "/opt/***/dags/jobs_dag.py", line 44, in check_table_exist
+    logging.info("THIS IS THE SCHEMA:",schema)
+[2022-09-06 16:26:53,839] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1992, in info
+    root.info(msg, *args, **kwargs)
+[2022-09-06 16:26:53,839] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+[2022-09-06 16:26:53,840] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1514, in _log
+    self.handle(record)
+[2022-09-06 16:26:53,840] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1524, in handle
+    self.callHandlers(record)
+[2022-09-06 16:26:53,841] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+[2022-09-06 16:26:53,841] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 894, in handle
+    self.emit(record)
+[2022-09-06 16:26:53,842] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/utils/log/file_task_handler.py", line 71, in emit
+    self.handler.emit(record)
+[2022-09-06 16:26:53,843] {logging_mixin.py:115} WARNING - Message: 'THIS IS THE SCHEMA:'
+Arguments: ('pg_catalog',)
+[2022-09-06 16:26:53,850] {base.py:68} INFO - Using connection ID 'postgres_default' for task execution.
+[2022-09-06 16:26:53,862] {logging_mixin.py:115} INFO - None
+[2022-09-06 16:26:53,863] {python.py:173} INFO - Done. Returned value was: create_table
+[2022-09-06 16:26:53,864] {skipmixin.py:140} INFO - Following branch create_table
+[2022-09-06 16:26:53,865] {skipmixin.py:175} INFO - Skipping tasks []
+[2022-09-06 16:26:53,920] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=tables_name_1, task_id=check_table_exist, execution_date=20220906T162650, start_date=20220906T162653, end_date=20220906T162653
+[2022-09-06 16:26:53,948] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-06 16:26:54,024] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

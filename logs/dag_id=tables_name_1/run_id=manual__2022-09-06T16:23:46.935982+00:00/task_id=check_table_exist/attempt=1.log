@@ -1,0 +1,35 @@
+[2022-09-06 16:23:50,309] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: tables_name_1.check_table_exist manual__2022-09-06T16:23:46.935982+00:00 [queued]>
+[2022-09-06 16:23:50,323] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: tables_name_1.check_table_exist manual__2022-09-06T16:23:46.935982+00:00 [queued]>
+[2022-09-06 16:23:50,325] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-06 16:23:50,325] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-09-06 16:23:50,326] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-06 16:23:50,345] {taskinstance.py:1397} INFO - Executing <Task(BranchPythonOperator): check_table_exist> on 2022-09-06 16:23:46.935982+00:00
+[2022-09-06 16:23:50,352] {standard_task_runner.py:52} INFO - Started process 6638 to run task
+[2022-09-06 16:23:50,356] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'tables_name_1', 'check_table_exist', 'manual__2022-09-06T16:23:46.935982+00:00', '--job-id', '3844', '--raw', '--subdir', 'DAGS_FOLDER/jobs_dag.py', '--cfg-path', '/tmp/tmp98_4hzsh', '--error-file', '/tmp/tmprnws79qi']
+[2022-09-06 16:23:50,358] {standard_task_runner.py:80} INFO - Job 3844: Subtask check_table_exist
+[2022-09-06 16:23:50,443] {task_command.py:371} INFO - Running <TaskInstance: tables_name_1.check_table_exist manual__2022-09-06T16:23:46.935982+00:00 [running]> on host eba23da77ca5
+[2022-09-06 16:23:50,557] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tables_name_1
+AIRFLOW_CTX_TASK_ID=check_table_exist
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-06T16:23:46.935982+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-06T16:23:46.935982+00:00
+[2022-09-06 16:23:50,574] {base.py:68} INFO - Using connection ID 'postgres_default' for task execution.
+[2022-09-06 16:23:50,597] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 207, in execute
+    branch = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobs_dag.py", line 44, in check_table_exist
+    logging.INFO("THIS IS THE SCHEMA:", schema)
+TypeError: 'int' object is not callable
+[2022-09-06 16:23:50,610] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=tables_name_1, task_id=check_table_exist, execution_date=20220906T162346, start_date=20220906T162350, end_date=20220906T162350
+[2022-09-06 16:23:50,628] {standard_task_runner.py:97} ERROR - Failed to execute job 3844 for task check_table_exist ('int' object is not callable; 6638)
+[2022-09-06 16:23:50,650] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-09-06 16:23:50,718] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

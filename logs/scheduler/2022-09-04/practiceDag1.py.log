@@ -1,0 +1,4 @@
+[2022-09-04 10:32:44,800] {processor.py:153} INFO - Started process (PID=4202) to work on /opt/airflow/dags/practiceDag1.py
+[2022-09-04 10:32:45,157] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-09-04 10:32:45,681] {logging_mixin.py:115} INFO - [2022-09-04 10:32:45,571] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-09-04 17:52:04,843] {processor.py:651} INFO - DAG(s) dict_keys(['loop_hello_world_1', 'loop_hello_world_2', 'loop_hello_world_3']) retrieved from /opt/airflow/dags/practiceDag1.py

@@ -1,0 +1,5 @@
+[2022-09-04 07:24:49,985] {processor.py:153} INFO - Started process (PID=4191) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-04 07:24:50,020] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-04 07:24:50,078] {logging_mixin.py:115} INFO - [2022-09-04 07:24:50,077] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-04 10:32:21,729] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-04 10:32:22,494] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py

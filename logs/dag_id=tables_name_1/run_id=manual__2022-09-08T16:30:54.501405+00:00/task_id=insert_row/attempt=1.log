@@ -1,0 +1,41 @@
+[2022-09-08 16:30:58,702] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: tables_name_1.insert_row manual__2022-09-08T16:30:54.501405+00:00 [queued]>
+[2022-09-08 16:30:58,718] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: tables_name_1.insert_row manual__2022-09-08T16:30:54.501405+00:00 [queued]>
+[2022-09-08 16:30:58,719] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-08 16:30:58,720] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-09-08 16:30:58,721] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-08 16:30:58,741] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): insert_row> on 2022-09-08 16:30:54.501405+00:00
+[2022-09-08 16:30:58,748] {standard_task_runner.py:52} INFO - Started process 2075 to run task
+[2022-09-08 16:30:58,752] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'tables_name_1', 'insert_row', 'manual__2022-09-08T16:30:54.501405+00:00', '--job-id', '4016', '--raw', '--subdir', 'DAGS_FOLDER/jobs_dag.py', '--cfg-path', '/tmp/tmpbjyf1cgz', '--error-file', '/tmp/tmp2468vlsx']
+[2022-09-08 16:30:58,753] {standard_task_runner.py:80} INFO - Job 4016: Subtask insert_row
+[2022-09-08 16:30:58,837] {task_command.py:371} INFO - Running <TaskInstance: tables_name_1.insert_row manual__2022-09-08T16:30:54.501405+00:00 [running]> on host 4a46d6ca03fb
+[2022-09-08 16:30:58,964] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tables_name_1
+AIRFLOW_CTX_TASK_ID=insert_row
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-08T16:30:54.501405+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-08T16:30:54.501405+00:00
+[2022-09-08 16:30:58,982] {base.py:68} INFO - Using connection ID 'postgres_default' for task execution.
+[2022-09-08 16:30:58,989] {dbapi.py:231} INFO - Running statement: INSERT INTO table_name VALUES
+                (%s, '***', %s);, parameters: (9513388, datetime.datetime(2022, 9, 8, 16, 30, 58, 340444))
+[2022-09-08 16:30:58,991] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 211, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 233, in _run_command
+    cur.execute(sql_statement, parameters)
+psycopg2.errors.UndefinedTable: relation "table_name" does not exist
+LINE 1: INSERT INTO table_name VALUES
+                    ^
+
+[2022-09-08 16:30:59,002] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=tables_name_1, task_id=insert_row, execution_date=20220908T163054, start_date=20220908T163058, end_date=20220908T163059
+[2022-09-08 16:30:59,015] {standard_task_runner.py:97} ERROR - Failed to execute job 4016 for task insert_row (relation "table_name" does not exist
+LINE 1: INSERT INTO table_name VALUES
+                    ^
+; 2075)
+[2022-09-08 16:30:59,048] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-09-08 16:30:59,109] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

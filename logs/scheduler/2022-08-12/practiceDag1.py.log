@@ -1,0 +1,724 @@
+[2022-08-12 20:01:13,946] {processor.py:153} INFO - Started process (PID=19306) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:01:13,949] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:01:13,951] {logging_mixin.py:115} INFO - [2022-08-12 20:01:13,951] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:01:13,980] {logging_mixin.py:115} INFO - [2022-08-12 20:01:13,973] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/practiceDag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/practiceDag1.py", line 15, in <module>
+    python_callable=call_log
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 754, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 64, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'Calling log printing' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-08-12 20:01:13,983] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:01:14,018] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.077 seconds
+[2022-08-12 20:01:30,467] {processor.py:153} INFO - Started process (PID=19323) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:01:30,469] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:01:30,471] {logging_mixin.py:115} INFO - [2022-08-12 20:01:30,471] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:01:30,495] {logging_mixin.py:115} INFO - [2022-08-12 20:01:30,493] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/practiceDag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/practiceDag1.py", line 16, in <module>
+    python_callable=call_log
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 754, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 64, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'Calling log printing' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-08-12 20:01:30,497] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:01:30,525] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.062 seconds
+[2022-08-12 20:02:00,687] {processor.py:153} INFO - Started process (PID=19387) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:02:00,689] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:02:00,690] {logging_mixin.py:115} INFO - [2022-08-12 20:02:00,690] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:02:00,707] {logging_mixin.py:115} INFO - [2022-08-12 20:02:00,705] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/practiceDag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/practiceDag1.py", line 16, in <module>
+    python_callable=call_log
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 754, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 64, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'Calling log printing' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-08-12 20:02:00,708] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:02:00,737] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.055 seconds
+[2022-08-12 20:02:31,499] {processor.py:153} INFO - Started process (PID=19452) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:02:31,501] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:02:31,502] {logging_mixin.py:115} INFO - [2022-08-12 20:02:31,502] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:02:31,518] {logging_mixin.py:115} INFO - [2022-08-12 20:02:31,516] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/practiceDag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/practiceDag1.py", line 16, in <module>
+    python_callable=call_log
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 754, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 64, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'Calling log printing' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-08-12 20:02:31,520] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:02:31,546] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.052 seconds
+[2022-08-12 20:03:02,416] {processor.py:153} INFO - Started process (PID=19508) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:03:02,417] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:03:02,418] {logging_mixin.py:115} INFO - [2022-08-12 20:03:02,418] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:03:02,435] {logging_mixin.py:115} INFO - [2022-08-12 20:03:02,432] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/practiceDag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/practiceDag1.py", line 16, in <module>
+    python_callable=call_log
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 754, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 64, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'Calling log printing' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-08-12 20:03:02,436] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:03:02,463] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.052 seconds
+[2022-08-12 20:03:33,225] {processor.py:153} INFO - Started process (PID=19573) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:03:33,227] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:03:33,228] {logging_mixin.py:115} INFO - [2022-08-12 20:03:33,228] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:03:33,244] {logging_mixin.py:115} INFO - [2022-08-12 20:03:33,241] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/practiceDag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/practiceDag1.py", line 16, in <module>
+    python_callable=call_log
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 754, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 64, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'Calling log printing' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-08-12 20:03:33,246] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:03:33,272] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.052 seconds
+[2022-08-12 20:03:45,806] {processor.py:153} INFO - Started process (PID=19601) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:03:45,808] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:03:45,809] {logging_mixin.py:115} INFO - [2022-08-12 20:03:45,809] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:03:45,859] {logging_mixin.py:115} INFO - [2022-08-12 20:03:45,846] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/practiceDag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/practiceDag1.py", line 16, in <module>
+    python_callable=call_log
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 754, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 64, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'Calling log printing' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-08-12 20:03:45,861] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:03:45,905] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.103 seconds
+[2022-08-12 20:04:09,864] {processor.py:153} INFO - Started process (PID=19638) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:04:09,865] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:04:09,866] {logging_mixin.py:115} INFO - [2022-08-12 20:04:09,866] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:04:09,891] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:04:09,985] {logging_mixin.py:115} INFO - [2022-08-12 20:04:09,984] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:04:10,019] {logging_mixin.py:115} INFO - [2022-08-12 20:04:10,018] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:04:10,049] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.191 seconds
+[2022-08-12 20:04:40,114] {processor.py:153} INFO - Started process (PID=19702) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:04:40,116] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:04:40,117] {logging_mixin.py:115} INFO - [2022-08-12 20:04:40,117] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:04:40,149] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:04:40,182] {logging_mixin.py:115} INFO - [2022-08-12 20:04:40,182] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:04:40,215] {logging_mixin.py:115} INFO - [2022-08-12 20:04:40,214] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:04:40,229] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.120 seconds
+[2022-08-12 20:05:10,340] {processor.py:153} INFO - Started process (PID=19757) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:05:10,342] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:05:10,343] {logging_mixin.py:115} INFO - [2022-08-12 20:05:10,343] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:05:10,365] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:05:10,387] {logging_mixin.py:115} INFO - [2022-08-12 20:05:10,387] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:05:10,421] {logging_mixin.py:115} INFO - [2022-08-12 20:05:10,420] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:05:10,441] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.107 seconds
+[2022-08-12 20:05:40,526] {processor.py:153} INFO - Started process (PID=19821) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:05:40,527] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:05:40,528] {logging_mixin.py:115} INFO - [2022-08-12 20:05:40,528] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:05:40,548] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:05:40,653] {logging_mixin.py:115} INFO - [2022-08-12 20:05:40,653] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:05:40,686] {logging_mixin.py:115} INFO - [2022-08-12 20:05:40,685] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:05:40,705] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.206 seconds
+[2022-08-12 20:36:06,218] {processor.py:153} INFO - Started process (PID=19876) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:36:06,458] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:36:06,714] {logging_mixin.py:115} INFO - [2022-08-12 20:36:06,483] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:36:08,265] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:36:08,421] {logging_mixin.py:115} INFO - [2022-08-12 20:36:08,421] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:36:08,536] {logging_mixin.py:115} INFO - [2022-08-12 20:36:08,536] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:36:08,584] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 2.567 seconds
+[2022-08-12 20:36:38,994] {processor.py:153} INFO - Started process (PID=19940) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:36:38,996] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:36:38,997] {logging_mixin.py:115} INFO - [2022-08-12 20:36:38,997] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:36:39,014] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:36:39,110] {logging_mixin.py:115} INFO - [2022-08-12 20:36:39,109] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:36:39,153] {logging_mixin.py:115} INFO - [2022-08-12 20:36:39,152] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:36:39,171] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.182 seconds
+[2022-08-12 20:37:10,106] {processor.py:153} INFO - Started process (PID=19995) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:37:10,108] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:37:10,111] {logging_mixin.py:115} INFO - [2022-08-12 20:37:10,110] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:37:10,132] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:37:10,169] {logging_mixin.py:115} INFO - [2022-08-12 20:37:10,169] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:37:10,200] {logging_mixin.py:115} INFO - [2022-08-12 20:37:10,200] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:37:10,215] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.115 seconds
+[2022-08-12 20:37:40,537] {processor.py:153} INFO - Started process (PID=20058) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:37:40,540] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:37:40,541] {logging_mixin.py:115} INFO - [2022-08-12 20:37:40,541] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:37:40,560] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:37:40,655] {logging_mixin.py:115} INFO - [2022-08-12 20:37:40,655] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:37:40,697] {logging_mixin.py:115} INFO - [2022-08-12 20:37:40,697] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:37:40,713] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.184 seconds
+[2022-08-12 20:38:10,836] {processor.py:153} INFO - Started process (PID=20124) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:38:10,844] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:38:10,846] {logging_mixin.py:115} INFO - [2022-08-12 20:38:10,846] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:38:10,872] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:38:10,932] {logging_mixin.py:115} INFO - [2022-08-12 20:38:10,932] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:38:10,974] {logging_mixin.py:115} INFO - [2022-08-12 20:38:10,974] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:38:10,995] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.167 seconds
+[2022-08-12 20:38:41,089] {processor.py:153} INFO - Started process (PID=20179) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:38:41,090] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:38:41,091] {logging_mixin.py:115} INFO - [2022-08-12 20:38:41,091] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:38:41,114] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:38:41,239] {logging_mixin.py:115} INFO - [2022-08-12 20:38:41,239] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:38:41,323] {logging_mixin.py:115} INFO - [2022-08-12 20:38:41,323] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:38:41,343] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.259 seconds
+[2022-08-12 20:56:06,366] {processor.py:153} INFO - Started process (PID=20234) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:56:06,372] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:56:06,378] {logging_mixin.py:115} INFO - [2022-08-12 20:56:06,378] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:56:06,560] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:56:06,712] {logging_mixin.py:115} INFO - [2022-08-12 20:56:06,712] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:56:06,794] {logging_mixin.py:115} INFO - [2022-08-12 20:56:06,793] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:56:06,837] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.491 seconds
+[2022-08-12 20:56:37,657] {processor.py:153} INFO - Started process (PID=20287) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:56:37,680] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:56:37,751] {logging_mixin.py:115} INFO - [2022-08-12 20:56:37,744] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:56:38,094] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:56:39,658] {logging_mixin.py:115} INFO - [2022-08-12 20:56:39,658] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:56:40,004] {logging_mixin.py:115} INFO - [2022-08-12 20:56:40,003] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:56:40,178] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 2.595 seconds
+[2022-08-12 20:57:10,648] {processor.py:153} INFO - Started process (PID=20339) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:57:10,655] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:57:10,661] {logging_mixin.py:115} INFO - [2022-08-12 20:57:10,661] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:57:10,856] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:57:11,051] {logging_mixin.py:115} INFO - [2022-08-12 20:57:11,051] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:57:11,319] {logging_mixin.py:115} INFO - [2022-08-12 20:57:11,318] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:57:11,474] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.852 seconds
+[2022-08-12 20:57:41,998] {processor.py:153} INFO - Started process (PID=20387) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:57:42,018] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:57:42,031] {logging_mixin.py:115} INFO - [2022-08-12 20:57:42,030] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:57:42,133] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:57:42,605] {logging_mixin.py:115} INFO - [2022-08-12 20:57:42,604] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:57:42,766] {logging_mixin.py:115} INFO - [2022-08-12 20:57:42,765] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:57:42,881] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.919 seconds
+[2022-08-12 20:58:13,822] {processor.py:153} INFO - Started process (PID=20443) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:58:13,824] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 20:58:13,825] {logging_mixin.py:115} INFO - [2022-08-12 20:58:13,825] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:58:13,840] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 20:58:13,872] {logging_mixin.py:115} INFO - [2022-08-12 20:58:13,872] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 20:58:13,900] {logging_mixin.py:115} INFO - [2022-08-12 20:58:13,900] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 20:58:13,923] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.105 seconds
+[2022-08-12 21:16:12,000] {processor.py:153} INFO - Started process (PID=20474) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:16:12,025] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:16:12,056] {logging_mixin.py:115} INFO - [2022-08-12 21:16:12,056] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:16:12,239] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:16:12,936] {logging_mixin.py:115} INFO - [2022-08-12 21:16:12,935] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:16:13,316] {logging_mixin.py:115} INFO - [2022-08-12 21:16:13,315] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:16:13,423] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 1.461 seconds
+[2022-08-12 21:16:45,262] {processor.py:153} INFO - Started process (PID=20527) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:16:45,265] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:16:45,267] {logging_mixin.py:115} INFO - [2022-08-12 21:16:45,267] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:16:45,321] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:16:45,448] {logging_mixin.py:115} INFO - [2022-08-12 21:16:45,447] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:16:45,535] {logging_mixin.py:115} INFO - [2022-08-12 21:16:45,535] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:16:45,568] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.323 seconds
+[2022-08-12 21:34:35,611] {processor.py:153} INFO - Started process (PID=20564) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:34:35,644] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:34:35,680] {logging_mixin.py:115} INFO - [2022-08-12 21:34:35,679] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:34:36,276] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:34:38,882] {logging_mixin.py:115} INFO - [2022-08-12 21:34:38,881] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:34:40,058] {logging_mixin.py:115} INFO - [2022-08-12 21:34:40,046] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:34:40,949] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 5.449 seconds
+[2022-08-12 21:35:19,841] {processor.py:153} INFO - Started process (PID=20620) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:35:19,845] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:35:19,853] {logging_mixin.py:115} INFO - [2022-08-12 21:35:19,852] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:35:19,899] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:35:19,975] {logging_mixin.py:115} INFO - [2022-08-12 21:35:19,974] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:35:20,024] {logging_mixin.py:115} INFO - [2022-08-12 21:35:20,023] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:35:20,050] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.224 seconds
+[2022-08-12 21:37:35,643] {processor.py:153} INFO - Started process (PID=20647) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:37:35,649] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:37:35,651] {logging_mixin.py:115} INFO - [2022-08-12 21:37:35,650] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:37:35,716] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:37:35,978] {logging_mixin.py:115} INFO - [2022-08-12 21:37:35,978] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:37:36,042] {logging_mixin.py:115} INFO - [2022-08-12 21:37:36,042] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:37:36,068] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.432 seconds
+[2022-08-12 21:38:06,263] {processor.py:153} INFO - Started process (PID=20703) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:38:06,264] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:38:06,266] {logging_mixin.py:115} INFO - [2022-08-12 21:38:06,265] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:38:06,282] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:38:06,301] {logging_mixin.py:115} INFO - [2022-08-12 21:38:06,300] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:38:06,332] {logging_mixin.py:115} INFO - [2022-08-12 21:38:06,332] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:38:06,347] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.089 seconds
+[2022-08-12 21:38:37,227] {processor.py:153} INFO - Started process (PID=20767) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:38:37,230] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:38:37,233] {logging_mixin.py:115} INFO - [2022-08-12 21:38:37,233] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:38:37,266] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:38:37,357] {logging_mixin.py:115} INFO - [2022-08-12 21:38:37,357] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:38:37,405] {logging_mixin.py:115} INFO - [2022-08-12 21:38:37,405] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:38:37,420] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.198 seconds
+[2022-08-12 21:39:08,378] {processor.py:153} INFO - Started process (PID=20822) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:39:08,380] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:39:08,381] {logging_mixin.py:115} INFO - [2022-08-12 21:39:08,381] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:39:08,401] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:39:08,435] {logging_mixin.py:115} INFO - [2022-08-12 21:39:08,435] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:39:08,466] {logging_mixin.py:115} INFO - [2022-08-12 21:39:08,466] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:39:08,480] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.107 seconds
+[2022-08-12 21:39:38,724] {processor.py:153} INFO - Started process (PID=20887) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:39:38,726] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:39:38,729] {logging_mixin.py:115} INFO - [2022-08-12 21:39:38,729] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:39:38,748] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:39:38,842] {logging_mixin.py:115} INFO - [2022-08-12 21:39:38,842] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:39:38,872] {logging_mixin.py:115} INFO - [2022-08-12 21:39:38,871] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:39:38,888] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.175 seconds
+[2022-08-12 21:40:04,150] {processor.py:153} INFO - Started process (PID=20942) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:40:04,152] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:40:04,153] {logging_mixin.py:115} INFO - [2022-08-12 21:40:04,153] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:40:04,180] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:40:04,204] {logging_mixin.py:115} INFO - [2022-08-12 21:40:04,204] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:40:04,237] {logging_mixin.py:115} INFO - [2022-08-12 21:40:04,237] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:40:04,255] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.110 seconds
+[2022-08-12 21:40:35,024] {processor.py:153} INFO - Started process (PID=21006) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:40:35,028] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:40:35,030] {logging_mixin.py:115} INFO - [2022-08-12 21:40:35,030] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:40:35,055] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:40:35,080] {logging_mixin.py:115} INFO - [2022-08-12 21:40:35,079] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:40:35,118] {logging_mixin.py:115} INFO - [2022-08-12 21:40:35,118] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:40:35,136] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.117 seconds
+[2022-08-12 21:40:43,572] {processor.py:153} INFO - Started process (PID=21025) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:40:43,574] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:40:43,576] {logging_mixin.py:115} INFO - [2022-08-12 21:40:43,575] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:40:43,616] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:40:43,724] {logging_mixin.py:115} INFO - [2022-08-12 21:40:43,724] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:40:43,775] {logging_mixin.py:115} INFO - [2022-08-12 21:40:43,774] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:40:43,812] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.249 seconds
+[2022-08-12 21:41:14,148] {processor.py:153} INFO - Started process (PID=21089) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:41:14,150] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:41:14,152] {logging_mixin.py:115} INFO - [2022-08-12 21:41:14,152] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:41:14,177] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:41:14,234] {logging_mixin.py:115} INFO - [2022-08-12 21:41:14,234] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:41:14,289] {logging_mixin.py:115} INFO - [2022-08-12 21:41:14,288] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:41:14,315] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.171 seconds
+[2022-08-12 21:41:40,015] {processor.py:153} INFO - Started process (PID=21126) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:41:40,017] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:41:40,020] {logging_mixin.py:115} INFO - [2022-08-12 21:41:40,019] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:41:40,057] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:41:40,101] {logging_mixin.py:115} INFO - [2022-08-12 21:41:40,101] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:41:40,134] {logging_mixin.py:115} INFO - [2022-08-12 21:41:40,134] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:41:40,153] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.144 seconds
+[2022-08-12 21:42:10,542] {processor.py:153} INFO - Started process (PID=21190) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:42:10,543] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:42:10,547] {logging_mixin.py:115} INFO - [2022-08-12 21:42:10,547] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:42:10,575] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:42:10,593] {logging_mixin.py:115} INFO - [2022-08-12 21:42:10,593] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:42:10,633] {logging_mixin.py:115} INFO - [2022-08-12 21:42:10,633] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:42:10,650] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.112 seconds
+[2022-08-12 21:42:41,044] {processor.py:153} INFO - Started process (PID=21245) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:42:41,046] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:42:41,047] {logging_mixin.py:115} INFO - [2022-08-12 21:42:41,047] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:42:41,066] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:42:41,153] {logging_mixin.py:115} INFO - [2022-08-12 21:42:41,153] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:42:41,181] {logging_mixin.py:115} INFO - [2022-08-12 21:42:41,180] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:42:41,199] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.158 seconds
+[2022-08-12 21:43:04,306] {processor.py:153} INFO - Started process (PID=21300) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:43:04,307] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:43:04,308] {logging_mixin.py:115} INFO - [2022-08-12 21:43:04,308] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:43:04,339] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:43:04,360] {logging_mixin.py:115} INFO - [2022-08-12 21:43:04,360] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:43:04,393] {logging_mixin.py:115} INFO - [2022-08-12 21:43:04,393] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:43:04,412] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.110 seconds
+[2022-08-12 21:43:23,836] {processor.py:153} INFO - Started process (PID=21355) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:43:23,838] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:43:23,839] {logging_mixin.py:115} INFO - [2022-08-12 21:43:23,839] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:43:23,886] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:43:23,908] {logging_mixin.py:115} INFO - [2022-08-12 21:43:23,908] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:43:23,964] {logging_mixin.py:115} INFO - [2022-08-12 21:43:23,963] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:43:23,992] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.160 seconds
+[2022-08-12 21:43:54,040] {processor.py:153} INFO - Started process (PID=21410) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:43:54,042] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:43:54,043] {logging_mixin.py:115} INFO - [2022-08-12 21:43:54,043] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:43:54,060] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:43:54,158] {logging_mixin.py:115} INFO - [2022-08-12 21:43:54,158] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:43:54,189] {logging_mixin.py:115} INFO - [2022-08-12 21:43:54,189] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:43:54,207] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.171 seconds
+[2022-08-12 21:44:23,824] {processor.py:153} INFO - Started process (PID=21474) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:44:23,825] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:44:23,826] {logging_mixin.py:115} INFO - [2022-08-12 21:44:23,826] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:44:23,848] {logging_mixin.py:115} INFO - [2022-08-12 21:44:23,846] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/practiceDag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/practiceDag1.py", line 3, in <module>
+    from airflow.operators.python import PythonOperator,BranchPythonOperator, Dum
+ImportError: cannot import name 'Dum' from 'airflow.operators.python' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py)
+[2022-08-12 21:44:23,850] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:44:23,892] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.074 seconds
+[2022-08-12 21:44:54,024] {processor.py:153} INFO - Started process (PID=21538) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:44:54,025] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:44:54,027] {logging_mixin.py:115} INFO - [2022-08-12 21:44:54,026] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:44:54,038] {logging_mixin.py:115} INFO - [2022-08-12 21:44:54,036] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/practiceDag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/practiceDag1.py", line 3, in <module>
+    from airflow.operators.python import PythonOperator,BranchPythonOperator, Dum
+ImportError: cannot import name 'Dum' from 'airflow.operators.python' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py)
+[2022-08-12 21:44:54,039] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:44:54,065] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.049 seconds
+[2022-08-12 21:45:01,111] {processor.py:153} INFO - Started process (PID=21539) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:45:01,112] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:45:01,113] {logging_mixin.py:115} INFO - [2022-08-12 21:45:01,113] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:45:01,140] {logging_mixin.py:115} INFO - [2022-08-12 21:45:01,138] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/practiceDag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/practiceDag1.py", line 28, in <module>
+    t1.set_downstream(t2)
+NameError: name 't2' is not defined
+[2022-08-12 21:45:01,141] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:45:01,169] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.063 seconds
+[2022-08-12 21:45:21,512] {processor.py:153} INFO - Started process (PID=21594) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:45:21,514] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:45:21,515] {logging_mixin.py:115} INFO - [2022-08-12 21:45:21,515] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:45:21,545] {logging_mixin.py:115} INFO - [2022-08-12 21:45:21,542] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/practiceDag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/practiceDag1.py", line 28, in <module>
+    t1.set_downstream(t2)
+NameError: name 't2' is not defined
+[2022-08-12 21:45:21,547] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:45:21,572] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.065 seconds
+[2022-08-12 21:45:34,610] {processor.py:153} INFO - Started process (PID=21604) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:45:34,611] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:45:34,612] {logging_mixin.py:115} INFO - [2022-08-12 21:45:34,612] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:45:34,641] {logging_mixin.py:115} INFO - [2022-08-12 21:45:34,636] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/practiceDag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/practiceDag1.py", line 30, in <module>
+    trigger_rule="all_success",
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/dummy.py", line 45, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 764, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/task_group.py", line 210, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'insert_new_row' has already been added to the DAG
+[2022-08-12 21:45:34,642] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:45:34,673] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.067 seconds
+[2022-08-12 21:46:05,017] {processor.py:153} INFO - Started process (PID=21669) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:46:05,018] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:46:05,020] {logging_mixin.py:115} INFO - [2022-08-12 21:46:05,020] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:46:05,043] {logging_mixin.py:115} INFO - [2022-08-12 21:46:05,040] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/practiceDag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/practiceDag1.py", line 30, in <module>
+    trigger_rule="all_success",
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/dummy.py", line 45, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 764, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/task_group.py", line 210, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'insert_new_row' has already been added to the DAG
+[2022-08-12 21:46:05,045] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:46:05,073] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.060 seconds
+[2022-08-12 21:46:28,157] {processor.py:153} INFO - Started process (PID=21724) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:46:28,160] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:46:28,161] {logging_mixin.py:115} INFO - [2022-08-12 21:46:28,161] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:46:28,187] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:46:28,317] {logging_mixin.py:115} INFO - [2022-08-12 21:46:28,317] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:46:28,349] {logging_mixin.py:115} INFO - [2022-08-12 21:46:28,349] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:46:28,372] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.220 seconds
+[2022-08-12 21:46:58,466] {processor.py:153} INFO - Started process (PID=21780) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:46:58,468] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:46:58,469] {logging_mixin.py:115} INFO - [2022-08-12 21:46:58,469] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:46:58,490] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:46:58,523] {logging_mixin.py:115} INFO - [2022-08-12 21:46:58,523] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:46:58,567] {logging_mixin.py:115} INFO - [2022-08-12 21:46:58,567] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:46:58,580] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.121 seconds
+[2022-08-12 21:47:28,616] {processor.py:153} INFO - Started process (PID=21844) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:47:28,619] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:47:28,620] {logging_mixin.py:115} INFO - [2022-08-12 21:47:28,620] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:47:28,638] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:47:28,658] {logging_mixin.py:115} INFO - [2022-08-12 21:47:28,658] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:47:28,691] {logging_mixin.py:115} INFO - [2022-08-12 21:47:28,691] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:47:28,721] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.110 seconds
+[2022-08-12 21:47:58,803] {processor.py:153} INFO - Started process (PID=21900) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:47:58,806] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:47:58,807] {logging_mixin.py:115} INFO - [2022-08-12 21:47:58,807] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:47:58,824] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:47:58,907] {logging_mixin.py:115} INFO - [2022-08-12 21:47:58,906] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:47:58,934] {logging_mixin.py:115} INFO - [2022-08-12 21:47:58,934] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:47:58,956] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.158 seconds
+[2022-08-12 21:48:29,636] {processor.py:153} INFO - Started process (PID=21965) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:48:29,638] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:48:29,639] {logging_mixin.py:115} INFO - [2022-08-12 21:48:29,639] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:48:29,660] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:48:29,694] {logging_mixin.py:115} INFO - [2022-08-12 21:48:29,694] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:48:29,725] {logging_mixin.py:115} INFO - [2022-08-12 21:48:29,724] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:48:29,742] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.111 seconds
+[2022-08-12 21:49:00,575] {processor.py:153} INFO - Started process (PID=22029) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:49:00,578] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:49:00,579] {logging_mixin.py:115} INFO - [2022-08-12 21:49:00,579] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:49:00,596] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:49:00,614] {logging_mixin.py:115} INFO - [2022-08-12 21:49:00,613] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:49:00,645] {logging_mixin.py:115} INFO - [2022-08-12 21:49:00,644] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:49:00,661] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.091 seconds
+[2022-08-12 21:49:31,369] {processor.py:153} INFO - Started process (PID=22084) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:49:31,372] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:49:31,373] {logging_mixin.py:115} INFO - [2022-08-12 21:49:31,373] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:49:31,390] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:49:31,473] {logging_mixin.py:115} INFO - [2022-08-12 21:49:31,473] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:49:31,499] {logging_mixin.py:115} INFO - [2022-08-12 21:49:31,499] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:49:31,517] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.152 seconds
+[2022-08-12 21:50:02,182] {processor.py:153} INFO - Started process (PID=22149) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:50:02,185] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:50:02,186] {logging_mixin.py:115} INFO - [2022-08-12 21:50:02,186] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:50:02,207] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:50:02,243] {logging_mixin.py:115} INFO - [2022-08-12 21:50:02,243] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:50:02,277] {logging_mixin.py:115} INFO - [2022-08-12 21:50:02,277] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:50:02,296] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.119 seconds
+[2022-08-12 21:50:32,926] {processor.py:153} INFO - Started process (PID=22214) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:50:32,928] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:50:32,929] {logging_mixin.py:115} INFO - [2022-08-12 21:50:32,929] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:50:32,946] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:50:32,965] {logging_mixin.py:115} INFO - [2022-08-12 21:50:32,965] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:50:32,997] {logging_mixin.py:115} INFO - [2022-08-12 21:50:32,996] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:50:33,017] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.095 seconds
+[2022-08-12 21:51:03,711] {processor.py:153} INFO - Started process (PID=22269) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:51:03,714] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:51:03,717] {logging_mixin.py:115} INFO - [2022-08-12 21:51:03,717] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:51:03,735] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:51:03,854] {logging_mixin.py:115} INFO - [2022-08-12 21:51:03,854] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:51:03,884] {logging_mixin.py:115} INFO - [2022-08-12 21:51:03,884] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:51:03,904] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.197 seconds
+[2022-08-12 21:51:34,385] {processor.py:153} INFO - Started process (PID=22335) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:51:34,386] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:51:34,387] {logging_mixin.py:115} INFO - [2022-08-12 21:51:34,387] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:51:34,405] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:51:34,438] {logging_mixin.py:115} INFO - [2022-08-12 21:51:34,438] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:51:34,470] {logging_mixin.py:115} INFO - [2022-08-12 21:51:34,470] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:51:34,466] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.109 seconds
+[2022-08-12 21:52:05,257] {processor.py:153} INFO - Started process (PID=22400) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:52:05,259] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:52:05,260] {logging_mixin.py:115} INFO - [2022-08-12 21:52:05,260] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:52:05,282] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:52:05,303] {logging_mixin.py:115} INFO - [2022-08-12 21:52:05,303] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:52:05,338] {logging_mixin.py:115} INFO - [2022-08-12 21:52:05,338] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:52:05,359] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.116 seconds
+[2022-08-12 21:54:15,100] {processor.py:153} INFO - Started process (PID=42) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:54:15,103] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:54:15,107] {logging_mixin.py:115} INFO - [2022-08-12 21:54:15,107] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:54:15,143] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:54:15,665] {logging_mixin.py:115} INFO - [2022-08-12 21:54:15,665] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:54:15,755] {logging_mixin.py:115} INFO - [2022-08-12 21:54:15,755] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:54:15,785] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.694 seconds
+[2022-08-12 21:54:46,100] {processor.py:153} INFO - Started process (PID=97) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:54:46,104] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:54:46,105] {logging_mixin.py:115} INFO - [2022-08-12 21:54:46,105] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:54:46,124] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:54:46,160] {logging_mixin.py:115} INFO - [2022-08-12 21:54:46,160] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:54:46,315] {logging_mixin.py:115} INFO - [2022-08-12 21:54:46,315] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:54:46,332] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.236 seconds
+[2022-08-12 21:55:16,421] {processor.py:153} INFO - Started process (PID=161) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:55:16,422] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:55:16,424] {logging_mixin.py:115} INFO - [2022-08-12 21:55:16,424] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:55:16,446] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:55:16,695] {logging_mixin.py:115} INFO - [2022-08-12 21:55:16,695] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:55:16,731] {logging_mixin.py:115} INFO - [2022-08-12 21:55:16,730] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:55:16,755] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.340 seconds
+[2022-08-12 21:55:47,730] {processor.py:153} INFO - Started process (PID=216) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:55:47,731] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:55:47,732] {logging_mixin.py:115} INFO - [2022-08-12 21:55:47,732] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:55:47,750] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:55:47,802] {logging_mixin.py:115} INFO - [2022-08-12 21:55:47,802] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:55:47,968] {logging_mixin.py:115} INFO - [2022-08-12 21:55:47,968] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:55:47,986] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.262 seconds
+[2022-08-12 21:56:18,328] {processor.py:153} INFO - Started process (PID=279) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:56:18,329] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:56:18,330] {logging_mixin.py:115} INFO - [2022-08-12 21:56:18,330] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:56:18,351] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:56:18,572] {logging_mixin.py:115} INFO - [2022-08-12 21:56:18,572] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:56:18,604] {logging_mixin.py:115} INFO - [2022-08-12 21:56:18,604] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:56:18,618] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.296 seconds
+[2022-08-12 21:56:48,758] {processor.py:153} INFO - Started process (PID=343) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:56:48,761] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:56:48,764] {logging_mixin.py:115} INFO - [2022-08-12 21:56:48,764] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:56:48,782] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:56:48,817] {logging_mixin.py:115} INFO - [2022-08-12 21:56:48,817] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:56:48,974] {logging_mixin.py:115} INFO - [2022-08-12 21:56:48,974] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:56:48,991] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.237 seconds
+[2022-08-12 21:57:19,439] {processor.py:153} INFO - Started process (PID=398) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:57:19,441] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:57:19,443] {logging_mixin.py:115} INFO - [2022-08-12 21:57:19,443] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:57:19,461] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:57:19,682] {logging_mixin.py:115} INFO - [2022-08-12 21:57:19,682] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:57:19,711] {logging_mixin.py:115} INFO - [2022-08-12 21:57:19,711] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:57:19,726] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.293 seconds
+[2022-08-12 21:57:50,102] {processor.py:153} INFO - Started process (PID=462) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:57:50,103] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:57:50,104] {logging_mixin.py:115} INFO - [2022-08-12 21:57:50,104] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:57:50,138] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:57:50,203] {logging_mixin.py:115} INFO - [2022-08-12 21:57:50,203] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:57:50,360] {logging_mixin.py:115} INFO - [2022-08-12 21:57:50,360] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:57:50,377] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.281 seconds
+[2022-08-12 21:58:20,470] {processor.py:153} INFO - Started process (PID=527) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:58:20,471] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:58:20,473] {logging_mixin.py:115} INFO - [2022-08-12 21:58:20,472] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:58:20,492] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:58:20,725] {logging_mixin.py:115} INFO - [2022-08-12 21:58:20,725] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:58:20,765] {logging_mixin.py:115} INFO - [2022-08-12 21:58:20,764] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:58:20,786] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.320 seconds
+[2022-08-12 21:58:51,359] {processor.py:153} INFO - Started process (PID=582) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:58:51,360] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:58:51,361] {logging_mixin.py:115} INFO - [2022-08-12 21:58:51,361] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:58:51,379] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:58:51,416] {logging_mixin.py:115} INFO - [2022-08-12 21:58:51,416] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:58:51,605] {logging_mixin.py:115} INFO - [2022-08-12 21:58:51,604] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:58:51,626] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.272 seconds
+[2022-08-12 21:59:21,767] {processor.py:153} INFO - Started process (PID=646) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:59:21,770] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:59:21,771] {logging_mixin.py:115} INFO - [2022-08-12 21:59:21,771] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:59:21,789] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:59:22,007] {logging_mixin.py:115} INFO - [2022-08-12 21:59:22,007] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:59:22,045] {logging_mixin.py:115} INFO - [2022-08-12 21:59:22,045] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:59:22,060] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.298 seconds
+[2022-08-12 21:59:52,318] {processor.py:153} INFO - Started process (PID=701) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:59:52,321] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 21:59:52,323] {logging_mixin.py:115} INFO - [2022-08-12 21:59:52,323] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:59:52,340] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 21:59:52,378] {logging_mixin.py:115} INFO - [2022-08-12 21:59:52,378] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 21:59:52,541] {logging_mixin.py:115} INFO - [2022-08-12 21:59:52,540] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 21:59:52,557] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.242 seconds
+[2022-08-12 22:00:22,777] {processor.py:153} INFO - Started process (PID=765) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:00:22,780] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 22:00:22,781] {logging_mixin.py:115} INFO - [2022-08-12 22:00:22,781] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:00:22,799] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:00:23,011] {logging_mixin.py:115} INFO - [2022-08-12 22:00:23,011] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 22:00:23,035] {logging_mixin.py:115} INFO - [2022-08-12 22:00:23,035] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 22:00:23,049] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.277 seconds
+[2022-08-12 22:03:46,653] {processor.py:153} INFO - Started process (PID=42) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:03:46,657] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 22:03:46,660] {logging_mixin.py:115} INFO - [2022-08-12 22:03:46,660] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:03:46,719] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:03:46,817] {logging_mixin.py:115} INFO - [2022-08-12 22:03:46,817] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 22:03:47,351] {logging_mixin.py:115} INFO - [2022-08-12 22:03:47,351] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 22:03:47,374] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.738 seconds
+[2022-08-12 22:04:17,763] {processor.py:153} INFO - Started process (PID=97) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:04:17,765] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 22:04:17,767] {logging_mixin.py:115} INFO - [2022-08-12 22:04:17,767] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:04:17,791] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:04:18,171] {logging_mixin.py:115} INFO - [2022-08-12 22:04:18,171] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 22:04:18,275] {logging_mixin.py:115} INFO - [2022-08-12 22:04:18,274] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 22:04:18,315] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.563 seconds
+[2022-08-12 22:04:48,717] {processor.py:153} INFO - Started process (PID=162) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:04:48,718] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 22:04:48,720] {logging_mixin.py:115} INFO - [2022-08-12 22:04:48,720] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:04:48,737] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:04:48,760] {logging_mixin.py:115} INFO - [2022-08-12 22:04:48,760] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 22:04:48,931] {logging_mixin.py:115} INFO - [2022-08-12 22:04:48,931] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 22:04:48,946] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.234 seconds
+[2022-08-12 22:05:19,375] {processor.py:153} INFO - Started process (PID=216) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:05:19,376] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 22:05:19,377] {logging_mixin.py:115} INFO - [2022-08-12 22:05:19,377] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:05:19,399] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:05:19,620] {logging_mixin.py:115} INFO - [2022-08-12 22:05:19,620] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 22:05:19,655] {logging_mixin.py:115} INFO - [2022-08-12 22:05:19,655] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 22:05:19,677] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.308 seconds
+[2022-08-12 22:05:50,576] {processor.py:153} INFO - Started process (PID=281) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:05:50,577] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-12 22:05:50,578] {logging_mixin.py:115} INFO - [2022-08-12 22:05:50,578] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:05:50,600] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-12 22:05:50,641] {logging_mixin.py:115} INFO - [2022-08-12 22:05:50,640] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-12 22:05:50,874] {logging_mixin.py:115} INFO - [2022-08-12 22:05:50,874] {dag.py:2972} INFO - Setting next_dagrun for my_dag to 2022-08-11T00:00:00+00:00, run_after=2022-08-12T00:00:00+00:00
+[2022-08-12 22:05:50,891] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 0.320 seconds

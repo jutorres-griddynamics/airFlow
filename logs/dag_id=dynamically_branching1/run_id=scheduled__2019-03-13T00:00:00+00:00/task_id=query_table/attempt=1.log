@@ -1,0 +1,24 @@
+[2022-08-24 18:45:13,151] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dynamically_branching1.query_table scheduled__2019-03-13T00:00:00+00:00 [queued]>
+[2022-08-24 18:45:13,177] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dynamically_branching1.query_table scheduled__2019-03-13T00:00:00+00:00 [queued]>
+[2022-08-24 18:45:13,178] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-24 18:45:13,180] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-24 18:45:13,182] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-24 18:45:13,216] {taskinstance.py:1397} INFO - Executing <Task(DummyOperator): query_table> on 2019-03-13 00:00:00+00:00
+[2022-08-24 18:45:13,228] {standard_task_runner.py:52} INFO - Started process 4354 to run task
+[2022-08-24 18:45:13,240] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dynamically_branching1', 'query_table', 'scheduled__2019-03-13T00:00:00+00:00', '--job-id', '1070', '--raw', '--subdir', 'DAGS_FOLDER/jobs_dag.py', '--cfg-path', '/tmp/tmp8kzfza8n', '--error-file', '/tmp/tmpewlx0t2x']
+[2022-08-24 18:45:13,242] {standard_task_runner.py:80} INFO - Job 1070: Subtask query_table
+[2022-08-24 18:45:13,542] {task_command.py:371} INFO - Running <TaskInstance: dynamically_branching1.query_table scheduled__2019-03-13T00:00:00+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-24 18:45:13,779] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dynamically_branching1
+AIRFLOW_CTX_TASK_ID=query_table
+AIRFLOW_CTX_EXECUTION_DATE=2019-03-13T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-03-13T00:00:00+00:00
+[2022-08-24 18:45:13,821] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dynamically_branching1, task_id=query_table, execution_date=20190313T000000, start_date=20220824T184513, end_date=20220824T184513
+[2022-08-24 18:45:13,881] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-24 18:45:13,968] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-24 18:45:14,005] {dagrun.py:564} INFO - Marking run <DagRun dynamically_branching1 @ 2019-03-13 00:00:00+00:00: scheduled__2019-03-13T00:00:00+00:00, externally triggered: False> successful
+[2022-08-24 18:45:14,007] {dagrun.py:624} INFO - DagRun Finished: dag_id=dynamically_branching1, execution_date=2019-03-13 00:00:00+00:00, run_id=scheduled__2019-03-13T00:00:00+00:00, run_start_date=2022-08-24 18:45:06.649981+00:00, run_end_date=2022-08-24 18:45:14.007442+00:00, run_duration=7.357461, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2019-03-13 00:00:00+00:00, data_interval_end=2019-03-14 00:00:00+00:00, dag_hash=dc5336e34426b7854f19eb93fbec48dd

@@ -1,0 +1,4 @@
+[2022-09-04 10:32:44,754] {processor.py:153} INFO - Started process (PID=4209) to work on /opt/airflow/dags/my_dag.py
+[2022-09-04 10:32:45,005] {processor.py:641} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2022-09-04 10:32:45,618] {logging_mixin.py:115} INFO - [2022-09-04 10:32:45,566] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2022-09-04 17:52:04,800] {processor.py:651} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/my_dag.py

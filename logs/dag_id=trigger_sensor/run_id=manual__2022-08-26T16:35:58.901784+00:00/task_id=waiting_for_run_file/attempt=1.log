@@ -1,0 +1,174 @@
+[2022-08-26 16:35:59,940] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [queued]>
+[2022-08-26 16:35:59,958] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [queued]>
+[2022-08-26 16:35:59,959] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:35:59,960] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-26 16:35:59,961] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:35:59,991] {taskinstance.py:1397} INFO - Executing <Task(FileSensor): waiting_for_run_file> on 2022-08-26 16:35:58.901784+00:00
+[2022-08-26 16:36:00,001] {standard_task_runner.py:52} INFO - Started process 19192 to run task
+[2022-08-26 16:36:00,006] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'waiting_for_run_file', 'manual__2022-08-26T16:35:58.901784+00:00', '--job-id', '3263', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpoq039vmd', '--error-file', '/tmp/tmpfjq6ry98']
+[2022-08-26 16:36:00,007] {standard_task_runner.py:80} INFO - Job 3263: Subtask waiting_for_run_file
+[2022-08-26 16:36:00,113] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-26 16:36:00,224] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=waiting_for_run_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-26T16:35:58.901784+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-26T16:35:58.901784+00:00
+[2022-08-26 16:36:00,270] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-26 16:36:00,275] {filesystem.py:58} INFO - Poking for file /opt/***/Testtest.txt
+[2022-08-26 16:36:00,338] {taskinstance.py:1873} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2022-08-26 16:36:00,384] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-26 16:36:00,466] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-26 16:36:11,795] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [queued]>
+[2022-08-26 16:36:11,810] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [queued]>
+[2022-08-26 16:36:11,811] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:36:11,812] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-26 16:36:11,813] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:36:11,837] {taskinstance.py:1397} INFO - Executing <Task(FileSensor): waiting_for_run_file> on 2022-08-26 16:35:58.901784+00:00
+[2022-08-26 16:36:11,844] {standard_task_runner.py:52} INFO - Started process 19201 to run task
+[2022-08-26 16:36:11,850] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'waiting_for_run_file', 'manual__2022-08-26T16:35:58.901784+00:00', '--job-id', '3264', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmphaw4zcb5', '--error-file', '/tmp/tmpp8y8qw9y']
+[2022-08-26 16:36:11,851] {standard_task_runner.py:80} INFO - Job 3264: Subtask waiting_for_run_file
+[2022-08-26 16:36:11,944] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-26 16:36:12,069] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=waiting_for_run_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-26T16:35:58.901784+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-26T16:35:58.901784+00:00
+[2022-08-26 16:36:12,110] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-26 16:36:12,111] {filesystem.py:58} INFO - Poking for file /opt/***/Testtest.txt
+[2022-08-26 16:36:12,140] {taskinstance.py:1873} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2022-08-26 16:36:12,191] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-26 16:36:12,251] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-26 16:36:22,750] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [queued]>
+[2022-08-26 16:36:22,778] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [queued]>
+[2022-08-26 16:36:22,779] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:36:22,780] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-26 16:36:22,780] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:36:22,799] {taskinstance.py:1397} INFO - Executing <Task(FileSensor): waiting_for_run_file> on 2022-08-26 16:35:58.901784+00:00
+[2022-08-26 16:36:22,808] {standard_task_runner.py:52} INFO - Started process 19205 to run task
+[2022-08-26 16:36:22,813] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'waiting_for_run_file', 'manual__2022-08-26T16:35:58.901784+00:00', '--job-id', '3265', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpznsjnncg', '--error-file', '/tmp/tmpmt2kyx4x']
+[2022-08-26 16:36:22,814] {standard_task_runner.py:80} INFO - Job 3265: Subtask waiting_for_run_file
+[2022-08-26 16:36:22,910] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-26 16:36:23,005] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=waiting_for_run_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-26T16:35:58.901784+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-26T16:35:58.901784+00:00
+[2022-08-26 16:36:23,032] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-26 16:36:23,033] {filesystem.py:58} INFO - Poking for file /opt/***/Testtest.txt
+[2022-08-26 16:36:23,062] {taskinstance.py:1873} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2022-08-26 16:36:23,106] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-26 16:36:23,163] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-26 16:36:33,991] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [queued]>
+[2022-08-26 16:36:34,006] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [queued]>
+[2022-08-26 16:36:34,007] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:36:34,007] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-26 16:36:34,008] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:36:34,031] {taskinstance.py:1397} INFO - Executing <Task(FileSensor): waiting_for_run_file> on 2022-08-26 16:35:58.901784+00:00
+[2022-08-26 16:36:34,038] {standard_task_runner.py:52} INFO - Started process 19216 to run task
+[2022-08-26 16:36:34,044] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'waiting_for_run_file', 'manual__2022-08-26T16:35:58.901784+00:00', '--job-id', '3266', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmp_xq1hclj', '--error-file', '/tmp/tmpmudevnts']
+[2022-08-26 16:36:34,045] {standard_task_runner.py:80} INFO - Job 3266: Subtask waiting_for_run_file
+[2022-08-26 16:36:34,137] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-26 16:36:34,233] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=waiting_for_run_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-26T16:35:58.901784+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-26T16:35:58.901784+00:00
+[2022-08-26 16:36:34,263] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-26 16:36:34,264] {filesystem.py:58} INFO - Poking for file /opt/***/Testtest.txt
+[2022-08-26 16:36:34,290] {taskinstance.py:1873} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2022-08-26 16:36:34,339] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-26 16:36:34,405] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-26 16:36:45,411] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [queued]>
+[2022-08-26 16:36:45,429] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [queued]>
+[2022-08-26 16:36:45,430] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:36:45,431] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-26 16:36:45,431] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:36:45,456] {taskinstance.py:1397} INFO - Executing <Task(FileSensor): waiting_for_run_file> on 2022-08-26 16:35:58.901784+00:00
+[2022-08-26 16:36:45,465] {standard_task_runner.py:52} INFO - Started process 19227 to run task
+[2022-08-26 16:36:45,470] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'waiting_for_run_file', 'manual__2022-08-26T16:35:58.901784+00:00', '--job-id', '3267', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpat4hrhpn', '--error-file', '/tmp/tmp2myxzewq']
+[2022-08-26 16:36:45,471] {standard_task_runner.py:80} INFO - Job 3267: Subtask waiting_for_run_file
+[2022-08-26 16:36:45,555] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-26 16:36:45,644] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=waiting_for_run_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-26T16:35:58.901784+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-26T16:35:58.901784+00:00
+[2022-08-26 16:36:45,671] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-26 16:36:45,672] {filesystem.py:58} INFO - Poking for file /opt/***/Testtest.txt
+[2022-08-26 16:36:45,696] {taskinstance.py:1873} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2022-08-26 16:36:45,722] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-26 16:36:45,780] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-26 16:36:56,926] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [queued]>
+[2022-08-26 16:36:56,943] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [queued]>
+[2022-08-26 16:36:56,944] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:36:56,944] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-26 16:36:56,945] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:36:56,965] {taskinstance.py:1397} INFO - Executing <Task(FileSensor): waiting_for_run_file> on 2022-08-26 16:35:58.901784+00:00
+[2022-08-26 16:36:56,978] {standard_task_runner.py:52} INFO - Started process 19238 to run task
+[2022-08-26 16:36:56,985] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'waiting_for_run_file', 'manual__2022-08-26T16:35:58.901784+00:00', '--job-id', '3268', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmp5s1sylye', '--error-file', '/tmp/tmp99783f8n']
+[2022-08-26 16:36:56,986] {standard_task_runner.py:80} INFO - Job 3268: Subtask waiting_for_run_file
+[2022-08-26 16:36:57,105] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-26 16:36:57,201] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=waiting_for_run_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-26T16:35:58.901784+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-26T16:35:58.901784+00:00
+[2022-08-26 16:36:57,234] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-26 16:36:57,235] {filesystem.py:58} INFO - Poking for file /opt/***/Test/test.txt
+[2022-08-26 16:36:57,261] {taskinstance.py:1873} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2022-08-26 16:36:57,278] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-26 16:36:57,346] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-26 16:37:08,513] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [queued]>
+[2022-08-26 16:37:08,526] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [queued]>
+[2022-08-26 16:37:08,528] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:37:08,528] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-26 16:37:08,529] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 16:37:08,549] {taskinstance.py:1397} INFO - Executing <Task(FileSensor): waiting_for_run_file> on 2022-08-26 16:35:58.901784+00:00
+[2022-08-26 16:37:08,559] {standard_task_runner.py:52} INFO - Started process 19249 to run task
+[2022-08-26 16:37:08,565] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'waiting_for_run_file', 'manual__2022-08-26T16:35:58.901784+00:00', '--job-id', '3269', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpmr14vkll', '--error-file', '/tmp/tmpnwiv4c6q']
+[2022-08-26 16:37:08,567] {standard_task_runner.py:80} INFO - Job 3269: Subtask waiting_for_run_file
+[2022-08-26 16:37:08,668] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T16:35:58.901784+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-26 16:37:08,776] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=waiting_for_run_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-26T16:35:58.901784+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-26T16:35:58.901784+00:00
+[2022-08-26 16:37:08,807] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-26 16:37:08,808] {filesystem.py:58} INFO - Poking for file /opt/***/Test/test.txt
+[2022-08-26 16:37:08,809] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 288, in execute
+    raise AirflowSensorTimeout(f"Snap. Time is OUT. DAG id: {log_dag_id}")
+airflow.exceptions.AirflowSensorTimeout: Snap. Time is OUT. DAG id: trigger_sensor
+[2022-08-26 16:37:08,819] {taskinstance.py:1420} INFO - Immediate failure requested. Marking task as FAILED. dag_id=trigger_sensor, task_id=waiting_for_run_file, execution_date=20220826T163558, start_date=20220826T163708, end_date=20220826T163708
+[2022-08-26 16:37:08,837] {standard_task_runner.py:97} ERROR - Failed to execute job 3269 for task waiting_for_run_file (Snap. Time is OUT. DAG id: trigger_sensor; 19249)
+[2022-08-26 16:37:08,897] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-08-26 16:37:08,982] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

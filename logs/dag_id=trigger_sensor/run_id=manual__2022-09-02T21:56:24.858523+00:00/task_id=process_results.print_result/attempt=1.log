@@ -1,0 +1,25 @@
+[2022-09-02 21:56:51,188] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.process_results.print_result manual__2022-09-02T21:56:24.858523+00:00 [queued]>
+[2022-09-02 21:56:51,204] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.process_results.print_result manual__2022-09-02T21:56:24.858523+00:00 [queued]>
+[2022-09-02 21:56:51,205] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-02 21:56:51,206] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-09-02 21:56:51,207] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-02 21:56:51,224] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): process_results.print_result> on 2022-09-02 21:56:24.858523+00:00
+[2022-09-02 21:56:51,230] {standard_task_runner.py:52} INFO - Started process 596 to run task
+[2022-09-02 21:56:51,235] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'process_results.print_result', 'manual__2022-09-02T21:56:24.858523+00:00', '--job-id', '3795', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmp747_ad4q', '--error-file', '/tmp/tmpe5n4pxmd']
+[2022-09-02 21:56:51,236] {standard_task_runner.py:80} INFO - Job 3795: Subtask process_results.print_result
+[2022-09-02 21:56:51,321] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.process_results.print_result manual__2022-09-02T21:56:24.858523+00:00 [running]> on host 643b3d669374
+[2022-09-02 21:56:51,412] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=process_results.print_result
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-02T21:56:24.858523+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-02T21:56:24.858523+00:00
+[2022-09-02 21:56:51,415] {trigger_dag.py:41} INFO - Aqui es donde deberia salir el resultado:
+[2022-09-02 21:56:51,438] {trigger_dag.py:42} INFO - manual__2022-09-02T21:53:37.401514+00:00 ended
+[2022-09-02 21:56:51,439] {python.py:173} INFO - Done. Returned value was: None
+[2022-09-02 21:56:51,457] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=trigger_sensor, task_id=process_results.print_result, execution_date=20220902T215624, start_date=20220902T215651, end_date=20220902T215651
+[2022-09-02 21:56:51,487] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-02 21:56:51,543] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

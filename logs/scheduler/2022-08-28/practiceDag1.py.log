@@ -1,0 +1,9 @@
+[2022-08-28 13:50:39,503] {processor.py:153} INFO - Started process (PID=59476) to work on /opt/airflow/dags/practiceDag1.py
+[2022-08-28 13:50:39,517] {processor.py:641} INFO - Processing file /opt/airflow/dags/practiceDag1.py for tasks to queue
+[2022-08-28 13:50:39,524] {logging_mixin.py:115} INFO - [2022-08-28 13:50:39,524] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/practiceDag1.py
+[2022-08-28 13:50:39,704] {processor.py:651} INFO - DAG(s) dict_keys(['loop_hello_world_1', 'loop_hello_world_2', 'loop_hello_world_3']) retrieved from /opt/airflow/dags/practiceDag1.py
+[2022-08-28 13:50:40,477] {logging_mixin.py:115} INFO - [2022-08-28 13:50:40,477] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-08-28 13:50:40,694] {logging_mixin.py:115} INFO - [2022-08-28 13:50:40,694] {dag.py:2972} INFO - Setting next_dagrun for loop_hello_world_1 to 2022-08-22T00:00:00+00:00, run_after=2022-08-23T00:00:00+00:00
+[2022-08-28 13:50:40,704] {logging_mixin.py:115} INFO - [2022-08-28 13:50:40,704] {dag.py:2972} INFO - Setting next_dagrun for loop_hello_world_2 to 2021-01-01T00:00:00+00:00, run_after=2021-01-02T00:00:00+00:00
+[2022-08-28 13:50:40,716] {logging_mixin.py:115} INFO - [2022-08-28 13:50:40,716] {dag.py:2972} INFO - Setting next_dagrun for loop_hello_world_3 to 2021-01-01T00:00:00+00:00, run_after=2021-01-02T00:00:00+00:00
+[2022-08-28 13:50:40,825] {processor.py:161} INFO - Processing /opt/airflow/dags/practiceDag1.py took 1.408 seconds

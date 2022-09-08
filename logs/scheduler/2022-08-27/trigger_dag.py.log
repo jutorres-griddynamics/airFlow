@@ -1,0 +1,118 @@
+[2022-08-27 00:02:52,442] {processor.py:153} INFO - Started process (PID=58379) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:02:52,445] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 00:02:52,451] {logging_mixin.py:115} INFO - [2022-08-27 00:02:52,451] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:02:52,534] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:02:52,709] {logging_mixin.py:115} INFO - [2022-08-27 00:02:52,708] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 00:02:52,777] {logging_mixin.py:115} INFO - [2022-08-27 00:02:52,777] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 00:02:52,807] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 0.377 seconds
+[2022-08-27 00:03:23,485] {processor.py:153} INFO - Started process (PID=58445) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:03:23,486] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 00:03:23,487] {logging_mixin.py:115} INFO - [2022-08-27 00:03:23,487] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:03:23,508] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:03:23,562] {logging_mixin.py:115} INFO - [2022-08-27 00:03:23,562] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 00:03:23,595] {logging_mixin.py:115} INFO - [2022-08-27 00:03:23,594] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 00:03:23,609] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 0.130 seconds
+[2022-08-27 00:04:14,681] {processor.py:153} INFO - Started process (PID=58501) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:04:14,695] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 00:04:14,709] {logging_mixin.py:115} INFO - [2022-08-27 00:04:14,706] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:04:14,845] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:04:15,736] {logging_mixin.py:115} INFO - [2022-08-27 00:04:15,736] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 00:04:16,026] {logging_mixin.py:115} INFO - [2022-08-27 00:04:16,025] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 00:04:16,165] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 1.547 seconds
+[2022-08-27 00:19:32,133] {processor.py:153} INFO - Started process (PID=58547) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:19:32,134] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 00:19:32,136] {logging_mixin.py:115} INFO - [2022-08-27 00:19:32,136] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:19:32,175] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:19:32,264] {logging_mixin.py:115} INFO - [2022-08-27 00:19:32,264] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 00:19:32,305] {logging_mixin.py:115} INFO - [2022-08-27 00:19:32,305] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 00:19:32,329] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 0.203 seconds
+[2022-08-27 00:19:39,528] {processor.py:153} INFO - Started process (PID=58586) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:19:39,536] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 00:19:39,545] {logging_mixin.py:115} INFO - [2022-08-27 00:19:39,544] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:19:39,958] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:19:41,096] {processor.py:611} INFO - Executed failure callback for <TaskInstance: trigger_sensor.waiting_for_run_file scheduled__2022-08-26T00:00:00+00:00 [failed]> in state failed
+[2022-08-27 00:19:41,596] {logging_mixin.py:115} INFO - [2022-08-27 00:19:41,596] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 00:19:41,906] {logging_mixin.py:115} INFO - [2022-08-27 00:19:41,905] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 00:19:42,027] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 2.628 seconds
+[2022-08-27 00:59:42,408] {processor.py:153} INFO - Started process (PID=58604) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:59:42,412] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 00:59:42,414] {logging_mixin.py:115} INFO - [2022-08-27 00:59:42,414] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:59:42,491] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 00:59:42,671] {logging_mixin.py:115} INFO - [2022-08-27 00:59:42,671] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 00:59:42,733] {logging_mixin.py:115} INFO - [2022-08-27 00:59:42,732] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 00:59:42,770] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 0.373 seconds
+[2022-08-27 01:00:16,100] {processor.py:153} INFO - Started process (PID=58651) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 01:00:16,145] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 01:00:16,193] {logging_mixin.py:115} INFO - [2022-08-27 01:00:16,192] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 01:00:17,110] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 01:00:18,681] {logging_mixin.py:115} INFO - [2022-08-27 01:00:18,680] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 01:00:19,492] {logging_mixin.py:115} INFO - [2022-08-27 01:00:19,491] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 01:00:19,777] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 3.860 seconds
+[2022-08-27 01:45:45,294] {processor.py:153} INFO - Started process (PID=58708) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 01:45:45,318] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 01:45:45,338] {logging_mixin.py:115} INFO - [2022-08-27 01:45:45,329] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 01:45:46,230] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 01:45:48,722] {logging_mixin.py:115} INFO - [2022-08-27 01:45:48,721] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 01:45:49,406] {logging_mixin.py:115} INFO - [2022-08-27 01:45:49,405] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 01:45:49,682] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 4.575 seconds
+[2022-08-27 01:48:12,650] {processor.py:153} INFO - Started process (PID=58773) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 01:48:12,659] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 01:48:12,670] {logging_mixin.py:115} INFO - [2022-08-27 01:48:12,669] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 01:48:12,891] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 01:48:13,634] {logging_mixin.py:115} INFO - [2022-08-27 01:48:13,633] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 01:48:14,368] {logging_mixin.py:115} INFO - [2022-08-27 01:48:14,368] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 01:48:14,635] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 2.041 seconds
+[2022-08-27 01:50:44,872] {processor.py:153} INFO - Started process (PID=58841) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 01:50:44,886] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 01:50:44,887] {logging_mixin.py:115} INFO - [2022-08-27 01:50:44,887] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 01:50:44,941] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 01:50:45,108] {logging_mixin.py:115} INFO - [2022-08-27 01:50:45,108] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 01:50:45,219] {logging_mixin.py:115} INFO - [2022-08-27 01:50:45,219] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 01:50:45,245] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 0.379 seconds
+[2022-08-27 02:05:18,741] {processor.py:153} INFO - Started process (PID=58894) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 02:05:18,770] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 02:05:18,799] {logging_mixin.py:115} INFO - [2022-08-27 02:05:18,798] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 02:05:19,783] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 02:20:21,376] {logging_mixin.py:115} INFO - [2022-08-27 02:20:21,348] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 03:08:52,598] {processor.py:153} INFO - Started process (PID=58996) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 03:08:52,636] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 03:08:52,682] {logging_mixin.py:115} INFO - [2022-08-27 03:08:52,682] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 03:08:54,408] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 03:09:02,680] {logging_mixin.py:115} INFO - [2022-08-27 03:09:02,680] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 03:09:04,940] {logging_mixin.py:115} INFO - [2022-08-27 03:09:04,939] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 03:09:06,066] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 13.805 seconds
+[2022-08-27 04:13:56,501] {processor.py:153} INFO - Started process (PID=59161) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 04:13:56,540] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 04:13:56,599] {logging_mixin.py:115} INFO - [2022-08-27 04:13:56,575] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 04:13:57,519] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 04:14:05,566] {logging_mixin.py:115} INFO - [2022-08-27 04:14:05,565] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 04:14:07,713] {logging_mixin.py:115} INFO - [2022-08-27 04:14:07,712] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 04:14:08,464] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 12.539 seconds
+[2022-08-27 04:46:01,082] {processor.py:153} INFO - Started process (PID=59244) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 04:46:01,086] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 04:46:01,097] {logging_mixin.py:115} INFO - [2022-08-27 04:46:01,097] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 04:46:01,455] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 04:46:02,409] {logging_mixin.py:115} INFO - [2022-08-27 04:46:02,408] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 04:46:02,691] {logging_mixin.py:115} INFO - [2022-08-27 04:46:02,691] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 04:46:02,846] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 1.793 seconds
+[2022-08-27 08:54:05,203] {processor.py:153} INFO - Started process (PID=59325) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 08:54:05,205] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 08:54:05,220] {logging_mixin.py:115} INFO - [2022-08-27 08:54:05,219] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 08:54:05,573] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 08:54:07,657] {logging_mixin.py:115} INFO - [2022-08-27 08:54:07,657] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 08:54:09,036] {logging_mixin.py:115} INFO - [2022-08-27 08:54:09,034] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 08:54:12,218] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 7.047 seconds
+[2022-08-27 13:15:19,140] {processor.py:153} INFO - Started process (PID=59400) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 13:15:19,161] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 13:15:19,199] {logging_mixin.py:115} INFO - [2022-08-27 13:15:19,191] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 13:15:20,203] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 13:15:21,590] {logging_mixin.py:115} INFO - [2022-08-27 13:15:21,578] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 13:15:22,803] {logging_mixin.py:115} INFO - [2022-08-27 13:15:22,802] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 13:15:23,094] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 4.131 seconds
+[2022-08-27 21:34:30,794] {processor.py:153} INFO - Started process (PID=59432) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-27 21:34:30,812] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-27 21:34:30,847] {logging_mixin.py:115} INFO - [2022-08-27 21:34:30,847] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 21:34:31,178] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-27 21:34:32,163] {logging_mixin.py:115} INFO - [2022-08-27 21:34:32,162] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-27 21:34:33,195] {logging_mixin.py:115} INFO - [2022-08-27 21:34:33,194] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-27T00:00:00+00:00, run_after=2022-08-28T00:00:00+00:00
+[2022-08-27 21:34:33,621] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 2.970 seconds

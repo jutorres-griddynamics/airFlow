@@ -1,0 +1,32 @@
+[2022-08-30 20:34:13,655] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dynamically_branching1.query_table manual__2022-08-30T20:34:08.560712+00:00 [queued]>
+[2022-08-30 20:34:13,667] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dynamically_branching1.query_table manual__2022-08-30T20:34:08.560712+00:00 [queued]>
+[2022-08-30 20:34:13,668] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-30 20:34:13,669] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-30 20:34:13,669] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-30 20:34:13,687] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): query_table> on 2022-08-30 20:34:08.560712+00:00
+[2022-08-30 20:34:13,694] {standard_task_runner.py:52} INFO - Started process 77988 to run task
+[2022-08-30 20:34:13,698] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dynamically_branching1', 'query_table', 'manual__2022-08-30T20:34:08.560712+00:00', '--job-id', '3426', '--raw', '--subdir', 'DAGS_FOLDER/jobs_dag.py', '--cfg-path', '/tmp/tmp188dlrfy', '--error-file', '/tmp/tmpdkdiesxl']
+[2022-08-30 20:34:13,699] {standard_task_runner.py:80} INFO - Job 3426: Subtask query_table
+[2022-08-30 20:34:13,788] {task_command.py:371} INFO - Running <TaskInstance: dynamically_branching1.query_table manual__2022-08-30T20:34:08.560712+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-30 20:34:13,898] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dynamically_branching1
+AIRFLOW_CTX_TASK_ID=query_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-30T20:34:08.560712+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-30T20:34:08.560712+00:00
+[2022-08-30 20:34:13,919] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobs_dag.py", line 41, in xcom_call
+    logging.INFO(f"{{ds}}")
+TypeError: 'int' object is not callable
+[2022-08-30 20:34:13,934] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=dynamically_branching1, task_id=query_table, execution_date=20220830T203408, start_date=20220830T203413, end_date=20220830T203413
+[2022-08-30 20:34:13,952] {standard_task_runner.py:97} ERROR - Failed to execute job 3426 for task query_table ('int' object is not callable; 77988)
+[2022-08-30 20:34:13,991] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-08-30 20:34:14,036] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,26 @@
+[2022-09-08 17:34:01,909] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: tables_name_1.insert_row manual__2022-09-08T17:33:58.432710+00:00 [queued]>
+[2022-09-08 17:34:01,923] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: tables_name_1.insert_row manual__2022-09-08T17:33:58.432710+00:00 [queued]>
+[2022-09-08 17:34:01,924] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-08 17:34:01,924] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-09-08 17:34:01,925] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-08 17:34:01,943] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): insert_row> on 2022-09-08 17:33:58.432710+00:00
+[2022-09-08 17:34:01,949] {standard_task_runner.py:52} INFO - Started process 4973 to run task
+[2022-09-08 17:34:01,955] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'tables_name_1', 'insert_row', 'manual__2022-09-08T17:33:58.432710+00:00', '--job-id', '4023', '--raw', '--subdir', 'DAGS_FOLDER/jobs_dag.py', '--cfg-path', '/tmp/tmp1h5c67f8', '--error-file', '/tmp/tmp4jt974sp']
+[2022-09-08 17:34:01,956] {standard_task_runner.py:80} INFO - Job 4023: Subtask insert_row
+[2022-09-08 17:34:02,043] {task_command.py:371} INFO - Running <TaskInstance: tables_name_1.insert_row manual__2022-09-08T17:33:58.432710+00:00 [running]> on host 4a46d6ca03fb
+[2022-09-08 17:34:02,154] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tables_name_1
+AIRFLOW_CTX_TASK_ID=insert_row
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-08T17:33:58.432710+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-08T17:33:58.432710+00:00
+[2022-09-08 17:34:02,167] {base.py:68} INFO - Using connection ID 'postgres_default' for task execution.
+[2022-09-08 17:34:02,171] {dbapi.py:231} INFO - Running statement: INSERT INTO my_table VALUES
+                (%s, '***', %s);, parameters: (28930088, datetime.datetime(2022, 9, 8, 17, 34, 1, 551578))
+[2022-09-08 17:34:02,173] {dbapi.py:239} INFO - Rows affected: 1
+[2022-09-08 17:34:02,190] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=tables_name_1, task_id=insert_row, execution_date=20220908T173358, start_date=20220908T173401, end_date=20220908T173402
+[2022-09-08 17:34:02,248] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-08 17:34:02,295] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

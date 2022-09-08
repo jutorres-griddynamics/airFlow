@@ -1,0 +1,27 @@
+[2022-09-01 21:44:25,719] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.process_results.remove_file manual__2022-09-01T21:43:47.511399+00:00 [queued]>
+[2022-09-01 21:44:25,732] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.process_results.remove_file manual__2022-09-01T21:43:47.511399+00:00 [queued]>
+[2022-09-01 21:44:25,733] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-01 21:44:25,734] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-09-01 21:44:25,735] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-01 21:44:25,753] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): process_results.remove_file> on 2022-09-01 21:43:47.511399+00:00
+[2022-09-01 21:44:25,760] {standard_task_runner.py:52} INFO - Started process 93173 to run task
+[2022-09-01 21:44:25,765] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'process_results.remove_file', 'manual__2022-09-01T21:43:47.511399+00:00', '--job-id', '3656', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmp944hpncx', '--error-file', '/tmp/tmpp0b0zqhc']
+[2022-09-01 21:44:25,766] {standard_task_runner.py:80} INFO - Job 3656: Subtask process_results.remove_file
+[2022-09-01 21:44:25,867] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.process_results.remove_file manual__2022-09-01T21:43:47.511399+00:00 [running]> on host 9d5d2a77e6ba
+[2022-09-01 21:44:25,969] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=process_results.remove_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-01T21:43:47.511399+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-01T21:43:47.511399+00:00
+[2022-09-01 21:44:25,971] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-09-01 21:44:25,972] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm /opt/***/dags/test.txt']
+[2022-09-01 21:44:25,989] {subprocess.py:85} INFO - Output:
+[2022-09-01 21:44:25,996] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-09-01 21:44:26,040] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=trigger_sensor, task_id=process_results.remove_file, execution_date=20220901T214347, start_date=20220901T214425, end_date=20220901T214426
+[2022-09-01 21:44:26,100] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-01 21:44:26,150] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

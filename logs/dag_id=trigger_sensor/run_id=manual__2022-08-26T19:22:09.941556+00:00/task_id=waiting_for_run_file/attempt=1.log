@@ -1,0 +1,26 @@
+[2022-08-26 19:22:11,293] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T19:22:09.941556+00:00 [queued]>
+[2022-08-26 19:22:11,313] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T19:22:09.941556+00:00 [queued]>
+[2022-08-26 19:22:11,314] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 19:22:11,315] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-26 19:22:11,316] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 19:22:11,341] {taskinstance.py:1397} INFO - Executing <Task(FileSensor): waiting_for_run_file> on 2022-08-26 19:22:09.941556+00:00
+[2022-08-26 19:22:11,352] {standard_task_runner.py:52} INFO - Started process 22978 to run task
+[2022-08-26 19:22:11,358] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'waiting_for_run_file', 'manual__2022-08-26T19:22:09.941556+00:00', '--job-id', '3282', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmp_sysov7q', '--error-file', '/tmp/tmpv1ihmc43']
+[2022-08-26 19:22:11,360] {standard_task_runner.py:80} INFO - Job 3282: Subtask waiting_for_run_file
+[2022-08-26 19:22:11,496] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.waiting_for_run_file manual__2022-08-26T19:22:09.941556+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-26 19:22:11,683] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=waiting_for_run_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-26T19:22:09.941556+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-26T19:22:09.941556+00:00
+[2022-08-26 19:22:11,697] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-26 19:22:11,698] {filesystem.py:58} INFO - Poking for file /opt/***/dags/test.txt
+[2022-08-26 19:22:11,699] {filesystem.py:63} INFO - Found File /opt/***/dags/test.txt last modified: 20220826165443
+[2022-08-26 19:22:11,700] {base.py:301} INFO - Success criteria met. Exiting.
+[2022-08-26 19:22:11,722] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=trigger_sensor, task_id=waiting_for_run_file, execution_date=20220826T192209, start_date=20220826T192211, end_date=20220826T192211
+[2022-08-26 19:22:11,782] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-26 19:22:11,877] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,28 @@
+[2022-08-24 19:08:08,929] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dynamically_branching1.bash_task scheduled__2020-06-24T00:00:00+00:00 [queued]>
+[2022-08-24 19:08:09,028] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dynamically_branching1.bash_task scheduled__2020-06-24T00:00:00+00:00 [queued]>
+[2022-08-24 19:08:09,030] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-24 19:08:09,031] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-24 19:08:09,032] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-24 19:08:09,152] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): bash_task> on 2020-06-24 00:00:00+00:00
+[2022-08-24 19:08:09,202] {standard_task_runner.py:52} INFO - Started process 6673 to run task
+[2022-08-24 19:08:09,242] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dynamically_branching1', 'bash_task', 'scheduled__2020-06-24T00:00:00+00:00', '--job-id', '1669', '--raw', '--subdir', 'DAGS_FOLDER/jobs_dag.py', '--cfg-path', '/tmp/tmps126skdt', '--error-file', '/tmp/tmplrq9pf42']
+[2022-08-24 19:08:09,244] {standard_task_runner.py:80} INFO - Job 1669: Subtask bash_task
+[2022-08-24 19:08:09,600] {task_command.py:371} INFO - Running <TaskInstance: dynamically_branching1.bash_task scheduled__2020-06-24T00:00:00+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-24 19:08:10,122] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dynamically_branching1
+AIRFLOW_CTX_TASK_ID=bash_task
+AIRFLOW_CTX_EXECUTION_DATE=2020-06-24T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-06-24T00:00:00+00:00
+[2022-08-24 19:08:10,125] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-24 19:08:10,150] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'whoami']
+[2022-08-24 19:08:10,244] {subprocess.py:85} INFO - Output:
+[2022-08-24 19:08:10,283] {subprocess.py:92} INFO - default
+[2022-08-24 19:08:10,288] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-08-24 19:08:10,523] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dynamically_branching1, task_id=bash_task, execution_date=20200624T000000, start_date=20220824T190808, end_date=20220824T190810
+[2022-08-24 19:08:10,634] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-24 19:08:10,855] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

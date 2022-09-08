@@ -1,0 +1,23 @@
+[2022-08-24 18:38:59,211] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dynamically_branching1.query_table manual__2022-08-24T18:38:39.939810+00:00 [queued]>
+[2022-08-24 18:38:59,228] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dynamically_branching1.query_table manual__2022-08-24T18:38:39.939810+00:00 [queued]>
+[2022-08-24 18:38:59,228] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-24 18:38:59,229] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-24 18:38:59,230] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-24 18:38:59,252] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): query_table> on 2022-08-24 18:38:39.939810+00:00
+[2022-08-24 18:38:59,259] {standard_task_runner.py:52} INFO - Started process 3430 to run task
+[2022-08-24 18:38:59,263] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dynamically_branching1', 'query_table', 'manual__2022-08-24T18:38:39.939810+00:00', '--job-id', '726', '--raw', '--subdir', 'DAGS_FOLDER/jobs_dag.py', '--cfg-path', '/tmp/tmpk63vsekn', '--error-file', '/tmp/tmpn8i10cpi']
+[2022-08-24 18:38:59,265] {standard_task_runner.py:80} INFO - Job 726: Subtask query_table
+[2022-08-24 18:38:59,359] {task_command.py:371} INFO - Running <TaskInstance: dynamically_branching1.query_table manual__2022-08-24T18:38:39.939810+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-24 18:38:59,457] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dynamically_branching1
+AIRFLOW_CTX_TASK_ID=query_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-24T18:38:39.939810+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-24T18:38:39.939810+00:00
+[2022-08-24 18:38:59,460] {python.py:173} INFO - Done. Returned value was: finish
+[2022-08-24 18:38:59,507] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dynamically_branching1, task_id=query_table, execution_date=20220824T183839, start_date=20220824T183859, end_date=20220824T183859
+[2022-08-24 18:38:59,557] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-24 18:38:59,603] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

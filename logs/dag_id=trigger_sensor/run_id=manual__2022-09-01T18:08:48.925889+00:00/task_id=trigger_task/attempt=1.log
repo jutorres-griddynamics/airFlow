@@ -1,0 +1,22 @@
+[2022-09-01 18:08:50,697] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.trigger_task manual__2022-09-01T18:08:48.925889+00:00 [queued]>
+[2022-09-01 18:08:50,713] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.trigger_task manual__2022-09-01T18:08:48.925889+00:00 [queued]>
+[2022-09-01 18:08:50,714] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-01 18:08:50,715] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-09-01 18:08:50,715] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-01 18:08:50,734] {taskinstance.py:1397} INFO - Executing <Task(TriggerDagRunOperator): trigger_task> on 2022-09-01 18:08:48.925889+00:00
+[2022-09-01 18:08:50,744] {standard_task_runner.py:52} INFO - Started process 88863 to run task
+[2022-09-01 18:08:50,748] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'trigger_task', 'manual__2022-09-01T18:08:48.925889+00:00', '--job-id', '3473', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmporacudoq', '--error-file', '/tmp/tmpo06d3pyk']
+[2022-09-01 18:08:50,750] {standard_task_runner.py:80} INFO - Job 3473: Subtask trigger_task
+[2022-09-01 18:08:50,847] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.trigger_task manual__2022-09-01T18:08:48.925889+00:00 [running]> on host 9d5d2a77e6ba
+[2022-09-01 18:08:50,944] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=trigger_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-01T18:08:48.925889+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-01T18:08:48.925889+00:00
+[2022-09-01 18:08:51,062] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=trigger_sensor, task_id=trigger_task, execution_date=20220901T180848, start_date=20220901T180850, end_date=20220901T180851
+[2022-09-01 18:08:51,126] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-01 18:08:51,185] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

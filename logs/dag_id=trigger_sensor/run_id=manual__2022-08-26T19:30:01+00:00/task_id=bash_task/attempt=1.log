@@ -1,0 +1,34 @@
+[2022-08-26 19:30:48,056] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.bash_task manual__2022-08-26T19:30:01+00:00 [queued]>
+[2022-08-26 19:30:48,069] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.bash_task manual__2022-08-26T19:30:01+00:00 [queued]>
+[2022-08-26 19:30:48,070] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 19:30:48,071] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-26 19:30:48,071] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-26 19:30:48,091] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): bash_task> on 2022-08-26 19:30:01+00:00
+[2022-08-26 19:30:48,098] {standard_task_runner.py:52} INFO - Started process 23403 to run task
+[2022-08-26 19:30:48,103] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'bash_task', 'manual__2022-08-26T19:30:01+00:00', '--job-id', '3297', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmplnt8ewsg', '--error-file', '/tmp/tmp6o6l0o_2']
+[2022-08-26 19:30:48,104] {standard_task_runner.py:80} INFO - Job 3297: Subtask bash_task
+[2022-08-26 19:30:48,191] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.bash_task manual__2022-08-26T19:30:01+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-26 19:30:48,283] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=bash_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-26T19:30:01+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-26T19:30:01+00:00
+[2022-08-26 19:30:48,285] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-26 19:30:48,287] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm text.txt']
+[2022-08-26 19:30:48,304] {subprocess.py:85} INFO - Output:
+[2022-08-26 19:30:48,310] {subprocess.py:92} INFO - rm: cannot remove 'text.txt': No such file or directory
+[2022-08-26 19:30:48,311] {subprocess.py:96} INFO - Command exited with return code 1
+[2022-08-26 19:30:48,341] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 195, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-08-26 19:30:48,347] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=trigger_sensor, task_id=bash_task, execution_date=20220826T193001, start_date=20220826T193048, end_date=20220826T193048
+[2022-08-26 19:30:48,363] {standard_task_runner.py:97} ERROR - Failed to execute job 3297 for task bash_task (Bash command failed. The command returned a non-zero exit code 1.; 23403)
+[2022-08-26 19:30:48,402] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-08-26 19:30:48,445] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

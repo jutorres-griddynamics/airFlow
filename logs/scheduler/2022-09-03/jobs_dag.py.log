@@ -1,0 +1,180 @@
+[2022-09-03 00:30:25,091] {processor.py:153} INFO - Started process (PID=3218) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 00:30:25,123] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 00:30:25,139] {logging_mixin.py:115} INFO - [2022-09-03 00:30:25,138] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 00:30:25,849] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 00:30:26,107] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 00:30:26,841] {logging_mixin.py:115} INFO - [2022-09-03 00:30:26,840] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 00:30:27,201] {logging_mixin.py:115} INFO - [2022-09-03 00:30:27,200] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 00:30:27,207] {logging_mixin.py:115} INFO - [2022-09-03 00:30:27,207] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 00:30:27,217] {logging_mixin.py:115} INFO - [2022-09-03 00:30:27,216] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 00:30:27,468] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 2.469 seconds
+[2022-09-03 00:40:45,254] {processor.py:153} INFO - Started process (PID=3274) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 00:40:45,267] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 00:40:45,296] {logging_mixin.py:115} INFO - [2022-09-03 00:40:45,282] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 00:40:45,822] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 00:40:45,987] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 00:40:46,950] {logging_mixin.py:115} INFO - [2022-09-03 00:40:46,949] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 00:40:47,742] {logging_mixin.py:115} INFO - [2022-09-03 00:40:47,741] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 00:40:47,758] {logging_mixin.py:115} INFO - [2022-09-03 00:40:47,758] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 00:40:47,799] {logging_mixin.py:115} INFO - [2022-09-03 00:40:47,798] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 00:40:48,000] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 2.964 seconds
+[2022-09-03 00:56:24,897] {processor.py:153} INFO - Started process (PID=3330) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 00:56:24,907] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 00:56:24,927] {logging_mixin.py:115} INFO - [2022-09-03 00:56:24,921] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 00:56:25,347] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 00:56:25,607] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 00:56:26,981] {logging_mixin.py:115} INFO - [2022-09-03 00:56:26,975] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 00:56:28,414] {logging_mixin.py:115} INFO - [2022-09-03 00:56:28,414] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 00:56:28,422] {logging_mixin.py:115} INFO - [2022-09-03 00:56:28,421] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 00:56:28,440] {logging_mixin.py:115} INFO - [2022-09-03 00:56:28,440] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 00:56:28,724] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 3.860 seconds
+[2022-09-03 01:27:32,501] {processor.py:153} INFO - Started process (PID=3398) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 01:27:32,520] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 01:27:32,678] {logging_mixin.py:115} INFO - [2022-09-03 01:27:32,678] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 01:27:33,959] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 01:27:34,369] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 01:27:36,707] {logging_mixin.py:115} INFO - [2022-09-03 01:27:36,695] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 01:27:37,937] {logging_mixin.py:115} INFO - [2022-09-03 01:27:37,937] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 01:27:37,963] {logging_mixin.py:115} INFO - [2022-09-03 01:27:37,962] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 01:27:37,997] {logging_mixin.py:115} INFO - [2022-09-03 01:27:37,996] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 01:27:38,407] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 6.365 seconds
+[2022-09-03 01:38:19,557] {processor.py:153} INFO - Started process (PID=3450) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 01:38:19,581] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 01:38:19,614] {logging_mixin.py:115} INFO - [2022-09-03 01:38:19,607] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 01:38:20,143] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 01:38:20,464] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 01:38:21,547] {logging_mixin.py:115} INFO - [2022-09-03 01:38:21,546] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 01:38:22,715] {logging_mixin.py:115} INFO - [2022-09-03 01:38:22,715] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 01:38:22,732] {logging_mixin.py:115} INFO - [2022-09-03 01:38:22,732] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 01:38:22,750] {logging_mixin.py:115} INFO - [2022-09-03 01:38:22,750] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 01:38:22,990] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 3.501 seconds
+[2022-09-03 01:48:54,391] {processor.py:153} INFO - Started process (PID=3509) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 01:48:54,400] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 01:48:54,404] {logging_mixin.py:115} INFO - [2022-09-03 01:48:54,404] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 01:48:54,505] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 01:48:54,559] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 01:48:54,739] {logging_mixin.py:115} INFO - [2022-09-03 01:48:54,739] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 01:48:54,887] {logging_mixin.py:115} INFO - [2022-09-03 01:48:54,887] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 01:48:54,902] {logging_mixin.py:115} INFO - [2022-09-03 01:48:54,902] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 01:48:54,905] {logging_mixin.py:115} INFO - [2022-09-03 01:48:54,905] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 01:48:54,965] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 0.599 seconds
+[2022-09-03 01:59:07,518] {processor.py:153} INFO - Started process (PID=3546) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 01:59:07,536] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 01:59:07,626] {logging_mixin.py:115} INFO - [2022-09-03 01:59:07,625] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 01:59:08,373] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 01:59:08,516] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 01:59:09,349] {logging_mixin.py:115} INFO - [2022-09-03 01:59:09,349] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 01:59:09,671] {logging_mixin.py:115} INFO - [2022-09-03 01:59:09,671] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 01:59:09,677] {logging_mixin.py:115} INFO - [2022-09-03 01:59:09,676] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 01:59:09,684] {logging_mixin.py:115} INFO - [2022-09-03 01:59:09,683] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 01:59:09,880] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 2.569 seconds
+[2022-09-03 02:09:20,512] {processor.py:153} INFO - Started process (PID=3588) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:09:20,527] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 02:09:20,545] {logging_mixin.py:115} INFO - [2022-09-03 02:09:20,545] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:09:20,815] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 02:09:20,917] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:09:22,435] {logging_mixin.py:115} INFO - [2022-09-03 02:09:22,435] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 02:09:23,527] {logging_mixin.py:115} INFO - [2022-09-03 02:09:23,515] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 02:09:23,550] {logging_mixin.py:115} INFO - [2022-09-03 02:09:23,549] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 02:09:23,556] {logging_mixin.py:115} INFO - [2022-09-03 02:09:23,556] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 02:09:23,812] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 3.389 seconds
+[2022-09-03 02:19:43,516] {processor.py:153} INFO - Started process (PID=3644) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:19:43,555] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 02:19:43,569] {logging_mixin.py:115} INFO - [2022-09-03 02:19:43,569] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:19:44,330] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 02:19:44,413] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:19:45,073] {logging_mixin.py:115} INFO - [2022-09-03 02:19:45,072] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 02:19:45,463] {logging_mixin.py:115} INFO - [2022-09-03 02:19:45,462] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 02:19:45,470] {logging_mixin.py:115} INFO - [2022-09-03 02:19:45,470] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 02:19:45,482] {logging_mixin.py:115} INFO - [2022-09-03 02:19:45,481] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 02:19:45,649] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 2.222 seconds
+[2022-09-03 02:30:04,679] {processor.py:153} INFO - Started process (PID=3699) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:30:04,694] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 02:30:04,715] {logging_mixin.py:115} INFO - [2022-09-03 02:30:04,711] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:30:05,370] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 02:30:05,523] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:30:06,099] {logging_mixin.py:115} INFO - [2022-09-03 02:30:06,098] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 02:30:06,536] {logging_mixin.py:115} INFO - [2022-09-03 02:30:06,535] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 02:30:06,546] {logging_mixin.py:115} INFO - [2022-09-03 02:30:06,545] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 02:30:06,553] {logging_mixin.py:115} INFO - [2022-09-03 02:30:06,553] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 02:30:06,929] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 2.367 seconds
+[2022-09-03 02:30:44,034] {processor.py:153} INFO - Started process (PID=3754) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:30:44,048] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 02:30:44,066] {logging_mixin.py:115} INFO - [2022-09-03 02:30:44,066] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:30:44,250] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 02:30:44,313] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:30:44,613] {logging_mixin.py:115} INFO - [2022-09-03 02:30:44,613] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 02:30:45,026] {logging_mixin.py:115} INFO - [2022-09-03 02:30:45,025] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 02:30:45,032] {logging_mixin.py:115} INFO - [2022-09-03 02:30:45,032] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 02:30:45,055] {logging_mixin.py:115} INFO - [2022-09-03 02:30:45,054] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 02:30:45,150] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 1.150 seconds
+[2022-09-03 02:40:56,510] {processor.py:153} INFO - Started process (PID=3780) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:40:56,518] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 02:40:56,525] {logging_mixin.py:115} INFO - [2022-09-03 02:40:56,524] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:40:56,816] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 02:40:56,945] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:40:57,445] {logging_mixin.py:115} INFO - [2022-09-03 02:40:57,444] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 02:40:57,630] {logging_mixin.py:115} INFO - [2022-09-03 02:40:57,630] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 02:40:57,647] {logging_mixin.py:115} INFO - [2022-09-03 02:40:57,646] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 02:40:57,693] {logging_mixin.py:115} INFO - [2022-09-03 02:40:57,682] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 02:40:57,939] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 1.474 seconds
+[2022-09-03 02:51:18,145] {processor.py:153} INFO - Started process (PID=3828) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:51:18,155] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 02:51:18,165] {logging_mixin.py:115} INFO - [2022-09-03 02:51:18,164] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:51:18,534] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 02:51:18,703] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:51:19,481] {logging_mixin.py:115} INFO - [2022-09-03 02:51:19,480] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 02:51:20,007] {logging_mixin.py:115} INFO - [2022-09-03 02:51:20,006] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 02:51:20,022] {logging_mixin.py:115} INFO - [2022-09-03 02:51:20,021] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 02:51:20,029] {logging_mixin.py:115} INFO - [2022-09-03 02:51:20,029] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 02:51:20,353] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 2.272 seconds
+[2022-09-03 02:58:15,290] {processor.py:153} INFO - Started process (PID=3882) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:58:15,295] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 02:58:15,299] {logging_mixin.py:115} INFO - [2022-09-03 02:58:15,299] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:58:15,329] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 02:58:15,345] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:58:15,436] {logging_mixin.py:115} INFO - [2022-09-03 02:58:15,436] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 02:58:15,516] {logging_mixin.py:115} INFO - [2022-09-03 02:58:15,516] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 02:58:15,519] {logging_mixin.py:115} INFO - [2022-09-03 02:58:15,518] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 02:58:15,520] {logging_mixin.py:115} INFO - [2022-09-03 02:58:15,520] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 02:58:15,552] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 0.268 seconds
+[2022-09-03 02:58:56,323] {processor.py:153} INFO - Started process (PID=3923) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:58:56,345] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 02:58:56,353] {logging_mixin.py:115} INFO - [2022-09-03 02:58:56,352] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:58:56,759] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 02:58:56,882] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 02:58:57,515] {logging_mixin.py:115} INFO - [2022-09-03 02:58:57,514] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 02:58:58,026] {logging_mixin.py:115} INFO - [2022-09-03 02:58:58,026] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 02:58:58,037] {logging_mixin.py:115} INFO - [2022-09-03 02:58:58,037] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 02:58:58,043] {logging_mixin.py:115} INFO - [2022-09-03 02:58:58,043] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 02:58:58,244] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 1.993 seconds
+[2022-09-03 03:05:51,228] {processor.py:153} INFO - Started process (PID=3957) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 03:05:51,235] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 03:05:51,242] {logging_mixin.py:115} INFO - [2022-09-03 03:05:51,242] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 03:05:51,452] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 03:05:51,539] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 03:05:52,137] {logging_mixin.py:115} INFO - [2022-09-03 03:05:52,137] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 03:05:52,657] {logging_mixin.py:115} INFO - [2022-09-03 03:05:52,656] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 03:05:52,668] {logging_mixin.py:115} INFO - [2022-09-03 03:05:52,667] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 03:05:52,675] {logging_mixin.py:115} INFO - [2022-09-03 03:05:52,674] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 03:05:52,795] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 1.618 seconds
+[2022-09-03 05:06:13,684] {processor.py:153} INFO - Started process (PID=4001) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 05:06:13,718] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 05:06:13,799] {logging_mixin.py:115} INFO - [2022-09-03 05:06:13,799] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 05:06:14,474] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 05:06:14,590] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 05:06:15,338] {logging_mixin.py:115} INFO - [2022-09-03 05:06:15,329] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 05:06:15,866] {logging_mixin.py:115} INFO - [2022-09-03 05:06:15,865] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 05:06:15,886] {logging_mixin.py:115} INFO - [2022-09-03 05:06:15,876] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 05:06:15,894] {logging_mixin.py:115} INFO - [2022-09-03 05:06:15,893] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 05:06:16,263] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 2.630 seconds
+[2022-09-03 05:46:32,800] {processor.py:153} INFO - Started process (PID=4047) to work on /opt/airflow/dags/jobs_dag.py
+[2022-09-03 05:46:32,830] {processor.py:641} INFO - Processing file /opt/airflow/dags/jobs_dag.py for tasks to queue
+[2022-09-03 05:46:32,842] {logging_mixin.py:115} INFO - [2022-09-03 05:46:32,842] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 05:46:33,848] {logging_mixin.py:115} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:390 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2022-09-03 05:46:34,227] {processor.py:651} INFO - DAG(s) dict_keys(['dynamically_branching1', 'dynamically_branching2', 'dynamically_branching3']) retrieved from /opt/airflow/dags/jobs_dag.py
+[2022-09-03 05:46:35,749] {logging_mixin.py:115} INFO - [2022-09-03 05:46:35,748] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-09-03 05:46:36,123] {logging_mixin.py:115} INFO - [2022-09-03 05:46:36,122] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching1 to None, run_after=None
+[2022-09-03 05:46:36,133] {logging_mixin.py:115} INFO - [2022-09-03 05:46:36,132] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching2 to 2018-11-11T00:00:00+00:00, run_after=2018-11-11T00:00:00+00:00
+[2022-09-03 05:46:36,138] {logging_mixin.py:115} INFO - [2022-09-03 05:46:36,138] {dag.py:2972} INFO - Setting next_dagrun for dynamically_branching3 to 2018-01-11T00:00:00+00:00, run_after=2018-01-11T00:00:00+00:00
+[2022-09-03 05:46:36,269] {processor.py:161} INFO - Processing /opt/airflow/dags/jobs_dag.py took 3.577 seconds

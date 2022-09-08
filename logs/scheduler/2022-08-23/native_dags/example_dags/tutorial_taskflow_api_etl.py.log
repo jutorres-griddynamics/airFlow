@@ -1,0 +1,136 @@
+[2022-08-23 00:00:27,233] {processor.py:153} INFO - Started process (PID=84159) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 00:00:27,267] {processor.py:641} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py for tasks to queue
+[2022-08-23 00:00:27,326] {logging_mixin.py:115} INFO - [2022-08-23 00:00:27,326] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 00:00:29,130] {processor.py:651} INFO - DAG(s) dict_keys(['tutorial_taskflow_api_etl']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 00:00:35,076] {logging_mixin.py:115} INFO - [2022-08-23 00:00:35,062] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-23 00:00:57,472] {logging_mixin.py:115} INFO - [2022-08-23 00:00:57,452] {dag.py:2972} INFO - Setting next_dagrun for tutorial_taskflow_api_etl to None, run_after=None
+[2022-08-23 00:00:57,872] {processor.py:161} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py took 29.959 seconds
+[2022-08-23 01:20:46,153] {processor.py:153} INFO - Started process (PID=84302) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 01:20:46,465] {processor.py:641} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py for tasks to queue
+[2022-08-23 01:20:47,021] {logging_mixin.py:115} INFO - [2022-08-23 01:20:47,019] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 01:36:16,743] {logging_mixin.py:115} INFO - [2022-08-23 01:36:16,659] {timeout.py:67} ERROR - Process timed out, PID: 84302
+[2022-08-23 01:36:18,626] {logging_mixin.py:115} INFO - [2022-08-23 01:36:16,848] {dagbag.py:321} ERROR - Failed to import: /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py", line 26, in <module>
+    from airflow.decorators import dag, task
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/__init__.py", line 20, in <module>
+    from airflow.decorators.base import TaskDecorator
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 228, in <module>
+    class _TaskDecorator(Generic[Function, OperatorSubclass]):
+  File "/home/airflow/.local/lib/python3.7/site-packages/attr/_next_gen.py", line 110, in wrap
+    return do_it(cls, True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/attr/_next_gen.py", line 76, in do_it
+    field_transformer=field_transformer,
+  File "/home/airflow/.local/lib/python3.7/site-packages/attr/_make.py", line 1388, in attrs
+    return wrap(maybe_cls)
+  File "/home/airflow/.local/lib/python3.7/site-packages/attr/_make.py", line 1325, in wrap
+    builder.add_eq()
+  File "/home/airflow/.local/lib/python3.7/site-packages/attr/_make.py", line 873, in add_eq
+    _make_eq(self._cls, self._attrs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/attr/_make.py", line 1572, in _make_eq
+    unique_filename = _generate_unique_filename(cls, "eq")
+  File "/home/airflow/.local/lib/python3.7/site-packages/attr/_make.py", line 1433, in _generate_unique_filename
+    unique_id = uuid.uuid4()
+  File "/usr/local/lib/python3.7/uuid.py", line 759, in uuid4
+    def uuid4():
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 84302
+[2022-08-23 01:36:22,043] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 02:29:27,700] {processor.py:153} INFO - Started process (PID=84484) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 02:29:28,182] {processor.py:641} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py for tasks to queue
+[2022-08-23 02:29:29,355] {logging_mixin.py:115} INFO - [2022-08-23 02:29:29,354] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 02:30:50,530] {logging_mixin.py:115} INFO - [2022-08-23 02:30:47,232] {timeout.py:67} ERROR - Process timed out, PID: 84484
+[2022-08-23 02:31:05,540] {logging_mixin.py:115} INFO - [2022-08-23 02:30:52,662] {dagbag.py:321} ERROR - Failed to import: /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py", line 103, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 3020, in factory
+    f(**f_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py", line 97, in tutorial_taskflow_api_etl
+    order_summary = transform(order_data)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 264, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 55, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 176, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 397, in apply_defaults
+    self.set_xcomargs_dependencies()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1107, in set_xcomargs_dependencies
+    XComArg.apply_upstream_relationship(self, arg)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 186, in apply_upstream_relationship
+    op.set_upstream(ref.operator)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 241, in set_upstream
+    self._set_relatives(task_or_task_list, upstream=True, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 169, in _set_relatives
+    if not isinstance(task_or_task_list, Sequence):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 84484
+[2022-08-23 02:31:07,474] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 02:31:26,352] {processor.py:161} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py took 99.643 seconds
+[2022-08-23 03:12:40,472] {processor.py:153} INFO - Started process (PID=84641) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 03:12:40,507] {processor.py:641} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py for tasks to queue
+[2022-08-23 03:19:54,651] {logging_mixin.py:115} INFO - [2022-08-23 03:19:54,595] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 03:19:56,269] {processor.py:651} INFO - DAG(s) dict_keys(['tutorial_taskflow_api_etl']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 03:28:53,816] {processor.py:153} INFO - Started process (PID=84727) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 03:28:53,853] {processor.py:641} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py for tasks to queue
+[2022-08-23 03:28:53,889] {logging_mixin.py:115} INFO - [2022-08-23 03:28:53,888] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 03:29:52,456] {logging_mixin.py:115} INFO - [2022-08-23 03:29:51,540] {timeout.py:67} ERROR - Process timed out, PID: 84727
+[2022-08-23 03:29:55,007] {logging_mixin.py:115} INFO - [2022-08-23 03:29:52,950] {dagbag.py:321} ERROR - Failed to import: /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py", line 26, in <module>
+    from airflow.decorators import dag, task
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/__init__.py", line 20, in <module>
+    from airflow.decorators.base import TaskDecorator
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 410, in <module>
+    class DecoratedMappedOperator(MappedOperator):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 467, in DecoratedMappedOperator
+    seen_oids: Optional[Set] = None,
+  File "/usr/local/lib/python3.7/typing.py", line 251, in inner
+    return cached(*args, **kwds)
+  File "/usr/local/lib/python3.7/typing.py", line 358, in __getitem__
+    return Union[arg, type(None)]
+  File "/usr/local/lib/python3.7/typing.py", line 251, in inner
+    return cached(*args, **kwds)
+  File "/usr/local/lib/python3.7/typing.py", line 351, in __getitem__
+    parameters = tuple(_type_check(p, msg) for p in parameters)
+  File "/usr/local/lib/python3.7/typing.py", line 351, in <genexpr>
+    parameters = tuple(_type_check(p, msg) for p in parameters)
+  File "/usr/local/lib/python3.7/typing.py", line 127, in _type_check
+    invalid_generic_forms = invalid_generic_forms + (ClassVar, )
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 84727
+[2022-08-23 03:29:55,494] {processor.py:653} WARNING - No viable dags retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py
+[2022-08-23 03:30:00,289] {processor.py:161} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py took 46.806 seconds

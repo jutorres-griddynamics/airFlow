@@ -1,0 +1,38 @@
+[2022-09-01 19:13:32,724] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.process_results.sensor_triggered_dag manual__2022-09-01T19:13:29.246412+00:00 [queued]>
+[2022-09-01 19:13:32,742] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.process_results.sensor_triggered_dag manual__2022-09-01T19:13:29.246412+00:00 [queued]>
+[2022-09-01 19:13:32,743] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-01 19:13:32,746] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-09-01 19:13:32,746] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-01 19:13:32,765] {taskinstance.py:1397} INFO - Executing <Task(ExternalTaskSensor): process_results.sensor_triggered_dag> on 2022-09-01 19:13:29.246412+00:00
+[2022-09-01 19:13:32,772] {standard_task_runner.py:52} INFO - Started process 89851 to run task
+[2022-09-01 19:13:32,776] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'process_results.sensor_triggered_dag', 'manual__2022-09-01T19:13:29.246412+00:00', '--job-id', '3516', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpzxcgbc0n', '--error-file', '/tmp/tmpvntnm9g5']
+[2022-09-01 19:13:32,778] {standard_task_runner.py:80} INFO - Job 3516: Subtask process_results.sensor_triggered_dag
+[2022-09-01 19:13:32,872] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.process_results.sensor_triggered_dag manual__2022-09-01T19:13:29.246412+00:00 [running]> on host 9d5d2a77e6ba
+[2022-09-01 19:13:32,976] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=process_results.sensor_triggered_dag
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-01T19:13:29.246412+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-01T19:13:29.246412+00:00
+[2022-09-01 19:13:32,981] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 277, in execute
+    poke_return = self.poke(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/external_task.py", line 175, in poke
+    dttm = context['logical_date'] - self.execution_delta
+  File "/home/airflow/.local/lib/python3.7/site-packages/pendulum/datetime.py", line 1417, in __sub__
+    return other.diff(self, False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pendulum/datetime.py", line 794, in diff
+    return Period(self, dt, absolute=abs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pendulum/period.py", line 33, in __new__
+    raise TypeError("can't compare offset-naive and offset-aware datetimes")
+TypeError: can't compare offset-naive and offset-aware datetimes
+[2022-09-01 19:13:33,000] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=trigger_sensor, task_id=process_results.sensor_triggered_dag, execution_date=20220901T191329, start_date=20220901T191332, end_date=20220901T191333
+[2022-09-01 19:13:33,021] {standard_task_runner.py:97} ERROR - Failed to execute job 3516 for task process_results.sensor_triggered_dag (can't compare offset-naive and offset-aware datetimes; 89851)
+[2022-09-01 19:13:33,070] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-09-01 19:13:33,137] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

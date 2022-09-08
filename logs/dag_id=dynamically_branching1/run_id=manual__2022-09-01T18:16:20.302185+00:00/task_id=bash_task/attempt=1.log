@@ -1,0 +1,30 @@
+[2022-09-01 19:36:32,154] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dynamically_branching1.bash_task manual__2022-09-01T18:16:20.302185+00:00 [queued]>
+[2022-09-01 19:36:32,684] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dynamically_branching1.bash_task manual__2022-09-01T18:16:20.302185+00:00 [queued]>
+[2022-09-01 19:36:34,644] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-01 19:36:34,658] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-09-01 19:36:34,716] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-01 19:36:35,771] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): bash_task> on 2022-09-01 18:16:20.302185+00:00
+[2022-09-01 19:36:36,340] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dynamically_branching1', 'bash_task', 'manual__2022-09-01T18:16:20.302185+00:00', '--job-id', '3540', '--raw', '--subdir', 'DAGS_FOLDER/jobs_dag.py', '--cfg-path', '/tmp/tmppke7vhmf', '--error-file', '/tmp/tmpw_yy47ox']
+[2022-09-01 19:36:36,367] {standard_task_runner.py:80} INFO - Job 3540: Subtask bash_task
+[2022-09-01 19:36:36,415] {standard_task_runner.py:52} INFO - Started process 90942 to run task
+[2022-09-01 19:36:37,576] {task_command.py:371} INFO - Running <TaskInstance: dynamically_branching1.bash_task manual__2022-09-01T18:16:20.302185+00:00 [running]> on host 9d5d2a77e6ba
+[2022-09-01 19:36:41,681] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dynamically_branching1
+AIRFLOW_CTX_TASK_ID=bash_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-01T18:16:20.302185+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-01T18:16:20.302185+00:00
+[2022-09-01 19:36:41,706] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-09-01 19:36:41,714] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo $(whoami)']
+[2022-09-01 19:36:42,426] {subprocess.py:85} INFO - Output:
+[2022-09-01 19:36:42,432] {subprocess.py:92} INFO - default
+[2022-09-01 19:36:42,438] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-09-01 19:36:42,713] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dynamically_branching1, task_id=bash_task, execution_date=20220901T181620, start_date=20220901T193632, end_date=20220901T193642
+[2022-09-01 19:36:42,807] {local_task_job.py:221} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-09-01 19:36:42,907] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 90942. PIDs of all processes in the group: [90942]
+[2022-09-01 19:36:42,945] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 90942
+[2022-09-01 19:36:42,974] {process_utils.py:75} INFO - Process psutil.Process(pid=90942, status='terminated', exitcode=0, started='19:36:36') (90942) terminated with exit code 0

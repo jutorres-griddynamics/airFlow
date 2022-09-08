@@ -1,0 +1,23 @@
+[2022-09-05 06:12:28,087] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: tables_name_1.query_table manual__2022-09-05T06:12:23.167183+00:00 [queued]>
+[2022-09-05 06:12:28,099] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: tables_name_1.query_table manual__2022-09-05T06:12:23.167183+00:00 [queued]>
+[2022-09-05 06:12:28,099] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-05 06:12:28,100] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-09-05 06:12:28,101] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-05 06:12:28,120] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): query_table> on 2022-09-05 06:12:23.167183+00:00
+[2022-09-05 06:12:28,128] {standard_task_runner.py:52} INFO - Started process 6906 to run task
+[2022-09-05 06:12:28,132] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'tables_name_1', 'query_table', 'manual__2022-09-05T06:12:23.167183+00:00', '--job-id', '3809', '--raw', '--subdir', 'DAGS_FOLDER/jobs_dag.py', '--cfg-path', '/tmp/tmpb1810_ik', '--error-file', '/tmp/tmp3g8gf07f']
+[2022-09-05 06:12:28,134] {standard_task_runner.py:80} INFO - Job 3809: Subtask query_table
+[2022-09-05 06:12:28,219] {task_command.py:371} INFO - Running <TaskInstance: tables_name_1.query_table manual__2022-09-05T06:12:23.167183+00:00 [running]> on host 643b3d669374
+[2022-09-05 06:12:28,318] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tables_name_1
+AIRFLOW_CTX_TASK_ID=query_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-05T06:12:23.167183+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-05T06:12:23.167183+00:00
+[2022-09-05 06:12:28,335] {python.py:173} INFO - Done. Returned value was: None
+[2022-09-05 06:12:28,354] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=tables_name_1, task_id=query_table, execution_date=20220905T061223, start_date=20220905T061228, end_date=20220905T061228
+[2022-09-05 06:12:28,386] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-05 06:12:28,428] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,25 @@
+[2022-08-24 19:21:03,974] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dynamically_branching1.check_table_exist scheduled__2022-03-09T00:00:00+00:00 [queued]>
+[2022-08-24 19:21:04,087] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dynamically_branching1.check_table_exist scheduled__2022-03-09T00:00:00+00:00 [queued]>
+[2022-08-24 19:21:04,103] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-24 19:21:04,104] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-24 19:21:04,105] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-24 19:21:04,264] {taskinstance.py:1397} INFO - Executing <Task(BranchPythonOperator): check_table_exist> on 2022-03-09 00:00:00+00:00
+[2022-08-24 19:21:04,296] {standard_task_runner.py:52} INFO - Started process 10795 to run task
+[2022-08-24 19:21:04,350] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dynamically_branching1', 'check_table_exist', 'scheduled__2022-03-09T00:00:00+00:00', '--job-id', '2924', '--raw', '--subdir', 'DAGS_FOLDER/jobs_dag.py', '--cfg-path', '/tmp/tmp7y9mrd_7', '--error-file', '/tmp/tmp24zt9z9h']
+[2022-08-24 19:21:04,359] {standard_task_runner.py:80} INFO - Job 2924: Subtask check_table_exist
+[2022-08-24 19:21:04,933] {task_command.py:371} INFO - Running <TaskInstance: dynamically_branching1.check_table_exist scheduled__2022-03-09T00:00:00+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-24 19:21:05,435] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dynamically_branching1
+AIRFLOW_CTX_TASK_ID=check_table_exist
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-09T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-09T00:00:00+00:00
+[2022-08-24 19:21:05,438] {python.py:173} INFO - Done. Returned value was: insert_row
+[2022-08-24 19:21:05,439] {skipmixin.py:140} INFO - Following branch insert_row
+[2022-08-24 19:21:05,441] {skipmixin.py:175} INFO - Skipping tasks ['create_table']
+[2022-08-24 19:21:05,712] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dynamically_branching1, task_id=check_table_exist, execution_date=20220309T000000, start_date=20220824T192103, end_date=20220824T192105
+[2022-08-24 19:21:05,841] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-24 19:21:06,126] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,4 @@
+[2022-09-04 07:24:49,193] {processor.py:153} INFO - Started process (PID=4190) to work on /opt/airflow/dags/trigger_dag.py
+[2022-09-04 07:24:49,324] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-09-04 07:24:49,461] {logging_mixin.py:115} INFO - [2022-09-04 07:24:49,431] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-09-04 10:32:22,502] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py

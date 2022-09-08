@@ -1,0 +1,32 @@
+[2022-08-16 18:42:19,493] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: my_dag2.python_run_id scheduled__2022-08-15T00:00:00+00:00 [queued]>
+[2022-08-16 18:42:19,510] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: my_dag2.python_run_id scheduled__2022-08-15T00:00:00+00:00 [queued]>
+[2022-08-16 18:42:19,512] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-16 18:42:19,513] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-16 18:42:19,514] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-16 18:42:19,535] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): python_run_id> on 2022-08-15 00:00:00+00:00
+[2022-08-16 18:42:19,544] {standard_task_runner.py:52} INFO - Started process 2630 to run task
+[2022-08-16 18:42:19,555] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'my_dag2', 'python_run_id', 'scheduled__2022-08-15T00:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/practiceDag1.py', '--cfg-path', '/tmp/tmpyfc4vuyg', '--error-file', '/tmp/tmphm5sjh8b']
+[2022-08-16 18:42:19,556] {standard_task_runner.py:80} INFO - Job 52: Subtask python_run_id
+[2022-08-16 18:42:19,677] {task_command.py:371} INFO - Running <TaskInstance: my_dag2.python_run_id scheduled__2022-08-15T00:00:00+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-16 18:42:19,799] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_dag2
+AIRFLOW_CTX_TASK_ID=python_run_id
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-15T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-15T00:00:00+00:00
+[2022-08-16 18:42:19,804] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/practiceDag1.py", line 14, in my_func
+    logger.inf(f"{context['dag_run'].run_id} start processing tables in database: ")
+AttributeError: 'RootLogger' object has no attribute 'inf'
+[2022-08-16 18:42:19,822] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=my_dag2, task_id=python_run_id, execution_date=20220815T000000, start_date=20220816T184219, end_date=20220816T184219
+[2022-08-16 18:42:19,843] {standard_task_runner.py:97} ERROR - Failed to execute job 52 for task python_run_id ('RootLogger' object has no attribute 'inf'; 2630)
+[2022-08-16 18:42:19,885] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-08-16 18:42:19,943] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

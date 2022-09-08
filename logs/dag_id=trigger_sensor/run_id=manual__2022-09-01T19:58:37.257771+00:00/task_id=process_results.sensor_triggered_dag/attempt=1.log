@@ -1,0 +1,37 @@
+[2022-09-01 19:58:42,308] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.process_results.sensor_triggered_dag manual__2022-09-01T19:58:37.257771+00:00 [queued]>
+[2022-09-01 19:58:42,323] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.process_results.sensor_triggered_dag manual__2022-09-01T19:58:37.257771+00:00 [queued]>
+[2022-09-01 19:58:42,324] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-01 19:58:42,324] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-09-01 19:58:42,325] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-01 19:58:42,344] {taskinstance.py:1397} INFO - Executing <Task(ExternalTaskSensor): process_results.sensor_triggered_dag> on 2022-09-01 19:58:37.257771+00:00
+[2022-09-01 19:58:42,352] {standard_task_runner.py:52} INFO - Started process 91516 to run task
+[2022-09-01 19:58:42,357] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'process_results.sensor_triggered_dag', 'manual__2022-09-01T19:58:37.257771+00:00', '--job-id', '3612', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpyrc2ef83', '--error-file', '/tmp/tmpltu8t089']
+[2022-09-01 19:58:42,358] {standard_task_runner.py:80} INFO - Job 3612: Subtask process_results.sensor_triggered_dag
+[2022-09-01 19:58:42,484] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.process_results.sensor_triggered_dag manual__2022-09-01T19:58:37.257771+00:00 [running]> on host 9d5d2a77e6ba
+[2022-09-01 19:58:42,592] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=process_results.sensor_triggered_dag
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-01T19:58:37.257771+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-01T19:58:37.257771+00:00
+[2022-09-01 19:58:42,595] {trigger_dag.py:47} INFO - Contexsto
+[2022-09-01 19:58:42,596] {trigger_dag.py:48} INFO - {'conf': <airflow.configuration.AirflowConfigParser object at 0x7fdeeb4a87d0>, 'dag': <DAG: trigger_sensor>, 'dag_run': <DagRun trigger_sensor @ 2022-09-01 19:58:37.257771+00:00: manual__2022-09-01T19:58:37.257771+00:00, externally triggered: True>, 'data_interval_end': DateTime(2022, 9, 1, 0, 0, 0, tzinfo=Timezone('UTC')), 'data_interval_start': DateTime(2022, 8, 31, 0, 0, 0, tzinfo=Timezone('UTC')), 'ds': '2022-09-01', 'ds_nodash': '20220901', 'execution_date': DateTime(2022, 9, 1, 19, 58, 37, 257771, tzinfo=Timezone('UTC')), 'inlets': [], 'logical_date': DateTime(2022, 9, 1, 19, 58, 37, 257771, tzinfo=Timezone('UTC')), 'macros': <module 'airflow.macros' from '/home/airflow/.local/lib/python3.7/site-packages/airflow/macros/__init__.py'>, 'next_ds': '2022-09-01', 'next_ds_nodash': '20220901', 'next_execution_date': DateTime(2022, 9, 1, 19, 58, 37, 257771, tzinfo=Timezone('UTC')), 'outlets': [], 'params': {}, 'prev_data_interval_start_success': DateTime(2022, 8, 28, 0, 0, 0, tzinfo=Timezone('UTC')), 'prev_data_interval_end_success': DateTime(2022, 8, 29, 0, 0, 0, tzinfo=Timezone('UTC')), 'prev_ds': '2022-09-01', 'prev_ds_nodash': '20220901', 'prev_execution_date': DateTime(2022, 9, 1, 19, 58, 37, 257771, tzinfo=Timezone('UTC')), 'prev_execution_date_success': None, 'prev_start_date_success': DateTime(2022, 8, 29, 7, 28, 57, 438437, tzinfo=Timezone('UTC')), 'run_id': 'manual__2022-09-01T19:58:37.257771+00:00', 'task': <Task(ExternalTaskSensor): process_results.sensor_triggered_dag>, 'task_instance': <TaskInstance: trigger_sensor.process_results.sensor_triggered_dag manual__2022-09-01T19:58:37.257771+00:00 [running]>, 'task_instance_key_str': 'trigger_sensor__process_results.sensor_triggered_dag__20220901', 'test_mode': False, 'ti': <TaskInstance: trigger_sensor.process_results.sensor_triggered_dag manual__2022-09-01T19:58:37.257771+00:00 [running]>, 'tomorrow_ds': '2022-09-02', 'tomorrow_ds_nodash': '20220902', 'ts': '2022-09-01T19:58:37.257771+00:00', 'ts_nodash': '20220901T195837', 'ts_nodash_with_tz': '20220901T195837.257771+0000', 'var': {'json': None, 'value': None}, 'conn': None, 'yesterday_ds': '2022-08-31', 'yesterday_ds_nodash': '20220831'}
+[2022-09-01 19:58:42,624] {trigger_dag.py:54} INFO - Pulling execution date failed
+[2022-09-01 19:58:42,625] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 277, in execute
+    poke_return = self.poke(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/external_task.py", line 182, in poke
+    serialized_dttm_filter = ','.join(dt.isoformat() for dt in dttm_filter)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/external_task.py", line 182, in <genexpr>
+    serialized_dttm_filter = ','.join(dt.isoformat() for dt in dttm_filter)
+AttributeError: 'NoneType' object has no attribute 'isoformat'
+[2022-09-01 19:58:42,640] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=trigger_sensor, task_id=process_results.sensor_triggered_dag, execution_date=20220901T195837, start_date=20220901T195842, end_date=20220901T195842
+[2022-09-01 19:58:42,658] {standard_task_runner.py:97} ERROR - Failed to execute job 3612 for task process_results.sensor_triggered_dag ('NoneType' object has no attribute 'isoformat'; 91516)
+[2022-09-01 19:58:42,691] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-09-01 19:58:42,770] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,12 @@
+[2022-08-28 20:19:57,748] {processor.py:153} INFO - Started process (PID=59497) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_subdag_operator.py
+[2022-08-28 20:19:57,755] {processor.py:641} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2022-08-28 20:19:57,764] {logging_mixin.py:115} INFO - [2022-08-28 20:19:57,764] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_subdag_operator.py
+[2022-08-28 20:19:57,989] {processor.py:651} INFO - DAG(s) dict_keys(['example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_subdag_operator.py
+[2022-08-28 20:19:58,435] {logging_mixin.py:115} INFO - [2022-08-28 20:19:58,435] {dag.py:2420} INFO - Sync 3 DAGs
+[2022-08-28 20:19:58,870] {logging_mixin.py:115} INFO - [2022-08-28 20:19:58,869] {dag.py:2972} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2022-08-28 20:19:58,884] {logging_mixin.py:115} INFO - [2022-08-28 20:19:58,884] {dag.py:2972} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2022-08-28 20:19:58,885] {logging_mixin.py:115} INFO - [2022-08-28 20:19:58,885] {dag.py:2972} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2022-08-28 20:19:59,074] {logging_mixin.py:115} INFO - [2022-08-28 20:19:59,065] {dag.py:2420} INFO - Sync 2 DAGs
+[2022-08-28 20:19:59,138] {logging_mixin.py:115} INFO - [2022-08-28 20:19:59,138] {dag.py:2972} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2022-08-28 20:19:59,140] {logging_mixin.py:115} INFO - [2022-08-28 20:19:59,140] {dag.py:2972} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2022-08-28 20:19:59,258] {processor.py:161} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_subdag_operator.py took 1.543 seconds

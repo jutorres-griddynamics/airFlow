@@ -1,0 +1,50 @@
+[2022-08-27 00:02:52,580] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file scheduled__2022-08-26T00:00:00+00:00 [queued]>
+[2022-08-27 00:02:52,594] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: trigger_sensor.waiting_for_run_file scheduled__2022-08-26T00:00:00+00:00 [queued]>
+[2022-08-27 00:02:52,595] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-27 00:02:52,596] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-27 00:02:52,597] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-27 00:02:52,616] {taskinstance.py:1397} INFO - Executing <Task(FileSensor): waiting_for_run_file> on 2022-08-26 00:00:00+00:00
+[2022-08-27 00:02:52,627] {standard_task_runner.py:52} INFO - Started process 28146 to run task
+[2022-08-27 00:02:52,631] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'trigger_sensor', 'waiting_for_run_file', 'scheduled__2022-08-26T00:00:00+00:00', '--job-id', '3316', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpopujzm5k', '--error-file', '/tmp/tmpjr0svaf9']
+[2022-08-27 00:02:52,638] {standard_task_runner.py:80} INFO - Job 3316: Subtask waiting_for_run_file
+[2022-08-27 00:02:52,788] {task_command.py:371} INFO - Running <TaskInstance: trigger_sensor.waiting_for_run_file scheduled__2022-08-26T00:00:00+00:00 [running]> on host 9d5d2a77e6ba
+[2022-08-27 00:02:52,907] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_sensor
+AIRFLOW_CTX_TASK_ID=waiting_for_run_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-26T00:00:00+00:00
+[2022-08-27 00:02:52,920] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-27 00:02:52,923] {filesystem.py:58} INFO - Poking for file /opt/***/dags/test.txt
+[2022-08-27 00:03:02,954] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-27 00:03:02,956] {filesystem.py:58} INFO - Poking for file /opt/***/dags/test.txt
+[2022-08-27 00:03:12,982] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-27 00:03:12,983] {filesystem.py:58} INFO - Poking for file /opt/***/dags/test.txt
+[2022-08-27 00:03:22,968] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-27 00:03:22,970] {filesystem.py:58} INFO - Poking for file /opt/***/dags/test.txt
+[2022-08-27 00:03:32,991] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-27 00:03:32,993] {filesystem.py:58} INFO - Poking for file /opt/***/dags/test.txt
+[2022-08-27 00:03:43,046] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-27 00:03:43,051] {filesystem.py:58} INFO - Poking for file /opt/***/dags/test.txt
+[2022-08-27 00:04:15,588] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-27 00:04:15,601] {filesystem.py:58} INFO - Poking for file /opt/***/dags/test.txt
+[2022-08-27 00:04:25,658] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-27 00:04:25,665] {filesystem.py:58} INFO - Poking for file /opt/***/dags/test.txt
+[2022-08-27 00:04:35,758] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-27 00:04:35,763] {filesystem.py:58} INFO - Poking for file /opt/***/dags/test.txt
+[2022-08-27 00:19:33,355] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-27 00:19:33,356] {filesystem.py:58} INFO - Poking for file /opt/***/dags/test.txt
+[2022-08-27 00:19:43,410] {base.py:68} INFO - Using connection ID 'my_file_system_practice' for task execution.
+[2022-08-27 00:19:43,419] {filesystem.py:58} INFO - Poking for file /opt/***/dags/test.txt
+[2022-08-27 00:19:43,438] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 288, in execute
+    raise AirflowSensorTimeout(f"Snap. Time is OUT. DAG id: {log_dag_id}")
+airflow.exceptions.AirflowSensorTimeout: Snap. Time is OUT. DAG id: trigger_sensor
+[2022-08-27 00:19:43,524] {taskinstance.py:1420} INFO - Immediate failure requested. Marking task as FAILED. dag_id=trigger_sensor, task_id=waiting_for_run_file, execution_date=20220826T000000, start_date=20220827T000252, end_date=20220827T001943
+[2022-08-27 00:19:43,630] {standard_task_runner.py:97} ERROR - Failed to execute job 3316 for task waiting_for_run_file (Snap. Time is OUT. DAG id: trigger_sensor; 28146)
+[2022-08-27 00:19:43,748] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-08-27 00:19:44,071] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

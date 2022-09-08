@@ -1,0 +1,15 @@
+[2022-08-28 13:50:10,889] {processor.py:153} INFO - Started process (PID=59465) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-28 13:50:10,910] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-28 13:50:10,987] {logging_mixin.py:115} INFO - [2022-08-28 13:50:10,985] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-28 13:50:12,554] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-28 13:50:38,022] {logging_mixin.py:115} INFO - [2022-08-28 13:50:38,009] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 13:50:38,524] {logging_mixin.py:115} INFO - [2022-08-28 13:50:38,524] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-28T00:00:00+00:00, run_after=2022-08-29T00:00:00+00:00
+[2022-08-28 13:50:38,724] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 28.639 seconds
+[2022-08-28 20:19:57,565] {processor.py:153} INFO - Started process (PID=59496) to work on /opt/airflow/dags/trigger_dag.py
+[2022-08-28 20:19:57,571] {processor.py:641} INFO - Processing file /opt/airflow/dags/trigger_dag.py for tasks to queue
+[2022-08-28 20:19:57,585] {logging_mixin.py:115} INFO - [2022-08-28 20:19:57,585] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/trigger_dag.py
+[2022-08-28 20:19:57,833] {processor.py:651} INFO - DAG(s) dict_keys(['trigger_sensor']) retrieved from /opt/airflow/dags/trigger_dag.py
+[2022-08-28 20:19:58,624] {processor.py:611} INFO - Executed failure callback for <TaskInstance: trigger_sensor.waiting_for_run_file scheduled__2022-08-27T00:00:00+00:00 [failed]> in state failed
+[2022-08-28 20:19:59,270] {logging_mixin.py:115} INFO - [2022-08-28 20:19:59,270] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-28 20:19:59,627] {logging_mixin.py:115} INFO - [2022-08-28 20:19:59,626] {dag.py:2972} INFO - Setting next_dagrun for trigger_sensor to 2022-08-28T00:00:00+00:00, run_after=2022-08-29T00:00:00+00:00
+[2022-08-28 20:19:59,734] {processor.py:161} INFO - Processing /opt/airflow/dags/trigger_dag.py took 2.224 seconds
