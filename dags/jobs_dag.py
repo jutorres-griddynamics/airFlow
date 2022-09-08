@@ -2,14 +2,14 @@ import logging
 import random
 import uuid
 from airflow import DAG
-from airflow import macros
-from textwrap import dedent
-from datetime import datetime, timedelta
+from datetime import datetime
 from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.bash_operator import BashOperator
-from airflow.operators.python_operator import PythonOperator, BranchPythonOperator
+from airflow.operators.python_operator import BranchPythonOperator
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.hooks.postgres_hook import PostgresHook
+from dags.operators.postgresqlcountrows import PostgreSQLCountRows
+
 config = {
     'tables_name_1': {'schedule_interval': "@once", "start_date": datetime(2018, 10, 11),'provide_context':True},
     'tables_name_2': {'schedule_interval': "@once", "start_date": datetime(2018, 11, 11),'provide_context':True},
@@ -111,15 +111,12 @@ def create_dag(dag_id,
                 (%s, '{{ ti.xcom_pull(task_ids='bash_task', key='return_value') }}', %s);''',
                 parameters=(uuid.uuid4().int % 123456789, datetime.now()),trigger_rule='one_success', dag=dag)
 
-        query_table = PythonOperator(
-            task_id="query_table",
-            python_callable=count_rows,
-            op_args=["select * from pg_tables;",
-                     "SELECT COUNT(*) FROM {};",table_name_success
-                     ],
-            provide_context=True,
-            do_xcom_push= True
-        )
+        query_table = PostgreSQLCountRows(task_id='query_table',
+                                        postgres_conn_id='postgres_default',
+                                        database='airflow',
+                                        table_name=table_name_success,
+                                        do_xcom_push=True)
+
 
         print_process_start >> bash_task >> check_table_exist >> [create_table,dummy_task]
         create_table >> insert_row >> query_table
